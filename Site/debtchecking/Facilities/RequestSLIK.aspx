@@ -209,7 +209,7 @@
                             <td class="B11"><cc1:CC_Date ID="dob" runat="server" CssClass="mandatory" ImgShown="true"></cc1:CC_Date></td>
                         </tr>
                         <tr>
-                            <td class="B01">Nomor KTP / Akta</td>
+                            <td class="B01">Nomor KTP / Paspor / Akta</td>
                             <td class="BS"></td>
                             <td class="B11"><asp:TextBox ID="ktp" runat="server" CssClass="mandatory" Width="180px" MaxLength="20" onpaste="if(parseInt(clipboardData.getData('Text')) != clipboardData.getData('Text')) return false;"></asp:TextBox></td>
                         </tr>
