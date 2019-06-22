@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MikroLogin">
+</Property><Property Name="Solution File" Value="E:\PRIVATES\Projects\NISP\Site\login\MikroLogin.sln">
+</Property><Property Name="User Options File" Value="E:\PRIVATES\Projects\NISP\Site\login\MikroLogin.suo">
+</Property><Property Name="Date" Value="12 Juni 2014">
+</Property><Property Name="Time" Value="17:45">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MikroLogin.sln" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\MikroLogin.sln">
+</Event><Event ErrorLevel="0" Project="" Source="MikroLogin.suo" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\MikroLogin.suo">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="MikroLogin.csproj" Description="Project file successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\MikroLogin.csproj">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="MikroLogin.csproj.user" Description="Project user file successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\MikroLogin.csproj.user">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="ChangePassword.aspx.cs" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\ChangePassword.aspx.cs">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="ChangePassword.aspx.designer.cs" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\ChangePassword.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="Login.aspx.cs" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\Login.aspx.cs">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="Login.aspx.designer.cs" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\Login.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="index.aspx.cs" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\index.aspx.cs">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="index.aspx.designer.cs" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\index.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="SimpleEncryption.cs" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\SimpleEncryption.cs">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="ChangePassword.aspx" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\ChangePassword.aspx">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="classes\DMS.Tools.dll" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\classes\DMS.Tools.dll">
+</Event><Event ErrorLevel="2" Project="MikroLogin" Source="image\log01.jpg" Description="Failed to backup file as E:\PRIVATES\Projects\NISP\Site\login\Backup\image\log01.jpg">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="image\log02.jpg" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\image\log02.jpg">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="image\log03.JPG" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\image\log03.JPG">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="image\spacer.gif" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\image\spacer.gif">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="include\onepost.html" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\include\onepost.html">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="Login.aspx" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\Login.aspx">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="login.css" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\login.css">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="style.css" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\style.css">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="Web.config" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\Web.config">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="index.aspx" Description="File successfully backed up as E:\PRIVATES\Projects\NISP\Site\login\Backup\index.aspx">
+</Event><Event ErrorLevel="1" Project="MikroLogin" Source="MikroLogin.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="MikroLogin.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MikroLogin" Source="MikroLogin.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MikroLogin.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MikroLogin.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MikroLogin" Source="MikroLogin.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

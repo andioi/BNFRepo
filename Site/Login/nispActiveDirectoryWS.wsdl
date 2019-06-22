@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetRSAPublicKey">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetRSAPublicKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRSAPublicKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Authenticate3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adRSAEncyrptedPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Authenticate3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Authenticate3Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strServerIp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strModule" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserDBResult" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="blnFound" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Authenticate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AuthenticateResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserDomainAndWS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vWSDir" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserDomainAndWSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckUserDomainAndWSResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Authenticate2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Authenticate2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Authenticate2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocalDomainList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocalDomainListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLocalDomainListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsedAttributesArray">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adObjectDn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsedAttributesArrayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsedAttributesArrayResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsedAttributes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adObjectDn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adAttrName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsedAttributesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsedAttributesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetObjectDn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetObjectDnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetObjectDnResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetObjectGUID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetObjectGUIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetObjectGUIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDescription">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDescriptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserDescriptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDescriptionINQ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDescriptionINQResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserDescriptionINQResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsedAttributesINQ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsedAttributesINQResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsedAttributesINQResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adNewPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ChangePasswordResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllADDomainUsers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adDomain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="adPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllADDomainUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllADDomainUsersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetRSAPublicKeySoapIn">
+    <wsdl:part name="parameters" element="tns:GetRSAPublicKey" />
+  </wsdl:message>
+  <wsdl:message name="GetRSAPublicKeySoapOut">
+    <wsdl:part name="parameters" element="tns:GetRSAPublicKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Authenticate3SoapIn">
+    <wsdl:part name="parameters" element="tns:Authenticate3" />
+  </wsdl:message>
+  <wsdl:message name="Authenticate3SoapOut">
+    <wsdl:part name="parameters" element="tns:Authenticate3Response" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDBSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserDB" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDBSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateSoapIn">
+    <wsdl:part name="parameters" element="tns:Authenticate" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateSoapOut">
+    <wsdl:part name="parameters" element="tns:AuthenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserDomainAndWSSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckUserDomainAndWS" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserDomainAndWSSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckUserDomainAndWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="Authenticate2SoapIn">
+    <wsdl:part name="parameters" element="tns:Authenticate2" />
+  </wsdl:message>
+  <wsdl:message name="Authenticate2SoapOut">
+    <wsdl:part name="parameters" element="tns:Authenticate2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalDomainListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLocalDomainList" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalDomainListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLocalDomainListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUsedAttributesArraySoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsedAttributesArray" />
+  </wsdl:message>
+  <wsdl:message name="GetUsedAttributesArraySoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsedAttributesArrayResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUsedAttributesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsedAttributes" />
+  </wsdl:message>
+  <wsdl:message name="GetUsedAttributesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsedAttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetObjectDnSoapIn">
+    <wsdl:part name="parameters" element="tns:GetObjectDn" />
+  </wsdl:message>
+  <wsdl:message name="GetObjectDnSoapOut">
+    <wsdl:part name="parameters" element="tns:GetObjectDnResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetObjectGUIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetObjectGUID" />
+  </wsdl:message>
+  <wsdl:message name="GetObjectGUIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetObjectGUIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDescriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserDescription" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDescriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDescriptionINQSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserDescriptionINQ" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDescriptionINQSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserDescriptionINQResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUsedAttributesINQSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsedAttributesINQ" />
+  </wsdl:message>
+  <wsdl:message name="GetUsedAttributesINQSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsedAttributesINQResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllADDomainUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllADDomainUsers" />
+  </wsdl:message>
+  <wsdl:message name="GetAllADDomainUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllADDomainUsersResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="GetRSAPublicKey">
+      <wsdl:input message="tns:GetRSAPublicKeySoapIn" />
+      <wsdl:output message="tns:GetRSAPublicKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate3">
+      <wsdl:input message="tns:Authenticate3SoapIn" />
+      <wsdl:output message="tns:Authenticate3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDB">
+      <wsdl:input message="tns:GetUserDBSoapIn" />
+      <wsdl:output message="tns:GetUserDBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate">
+      <wsdl:input message="tns:AuthenticateSoapIn" />
+      <wsdl:output message="tns:AuthenticateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDomainAndWS">
+      <wsdl:input message="tns:CheckUserDomainAndWSSoapIn" />
+      <wsdl:output message="tns:CheckUserDomainAndWSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate2">
+      <wsdl:input message="tns:Authenticate2SoapIn" />
+      <wsdl:output message="tns:Authenticate2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalDomainList">
+      <wsdl:input message="tns:GetLocalDomainListSoapIn" />
+      <wsdl:output message="tns:GetLocalDomainListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsedAttributesArray">
+      <wsdl:input message="tns:GetUsedAttributesArraySoapIn" />
+      <wsdl:output message="tns:GetUsedAttributesArraySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsedAttributes">
+      <wsdl:input message="tns:GetUsedAttributesSoapIn" />
+      <wsdl:output message="tns:GetUsedAttributesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectDn">
+      <wsdl:input message="tns:GetObjectDnSoapIn" />
+      <wsdl:output message="tns:GetObjectDnSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGUID">
+      <wsdl:input message="tns:GetObjectGUIDSoapIn" />
+      <wsdl:output message="tns:GetObjectGUIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDescription">
+      <wsdl:input message="tns:GetUserDescriptionSoapIn" />
+      <wsdl:output message="tns:GetUserDescriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDescriptionINQ">
+      <wsdl:input message="tns:GetUserDescriptionINQSoapIn" />
+      <wsdl:output message="tns:GetUserDescriptionINQSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsedAttributesINQ">
+      <wsdl:input message="tns:GetUsedAttributesINQSoapIn" />
+      <wsdl:output message="tns:GetUsedAttributesINQSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <wsdl:input message="tns:ChangePasswordSoapIn" />
+      <wsdl:output message="tns:ChangePasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllADDomainUsers">
+      <wsdl:input message="tns:GetAllADDomainUsersSoapIn" />
+      <wsdl:output message="tns:GetAllADDomainUsersSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRSAPublicKey">
+      <soap:operation soapAction="http://tempuri.org/GetRSAPublicKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate3">
+      <soap:operation soapAction="http://tempuri.org/Authenticate3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDB">
+      <soap:operation soapAction="http://tempuri.org/GetUserDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate">
+      <soap:operation soapAction="http://tempuri.org/Authenticate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDomainAndWS">
+      <soap:operation soapAction="http://tempuri.org/CheckUserDomainAndWS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate2">
+      <soap:operation soapAction="http://tempuri.org/Authenticate2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalDomainList">
+      <soap:operation soapAction="http://tempuri.org/GetLocalDomainList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsedAttributesArray">
+      <soap:operation soapAction="http://tempuri.org/GetUsedAttributesArray" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsedAttributes">
+      <soap:operation soapAction="http://tempuri.org/GetUsedAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectDn">
+      <soap:operation soapAction="http://tempuri.org/GetObjectDn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGUID">
+      <soap:operation soapAction="http://tempuri.org/GetObjectGUID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDescription">
+      <soap:operation soapAction="http://tempuri.org/GetUserDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDescriptionINQ">
+      <soap:operation soapAction="http://tempuri.org/GetUserDescriptionINQ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsedAttributesINQ">
+      <soap:operation soapAction="http://tempuri.org/GetUsedAttributesINQ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap:operation soapAction="http://tempuri.org/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllADDomainUsers">
+      <soap:operation soapAction="http://tempuri.org/GetAllADDomainUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRSAPublicKey">
+      <soap12:operation soapAction="http://tempuri.org/GetRSAPublicKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate3">
+      <soap12:operation soapAction="http://tempuri.org/Authenticate3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDB">
+      <soap12:operation soapAction="http://tempuri.org/GetUserDB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate">
+      <soap12:operation soapAction="http://tempuri.org/Authenticate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDomainAndWS">
+      <soap12:operation soapAction="http://tempuri.org/CheckUserDomainAndWS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Authenticate2">
+      <soap12:operation soapAction="http://tempuri.org/Authenticate2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalDomainList">
+      <soap12:operation soapAction="http://tempuri.org/GetLocalDomainList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsedAttributesArray">
+      <soap12:operation soapAction="http://tempuri.org/GetUsedAttributesArray" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsedAttributes">
+      <soap12:operation soapAction="http://tempuri.org/GetUsedAttributes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectDn">
+      <soap12:operation soapAction="http://tempuri.org/GetObjectDn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObjectGUID">
+      <soap12:operation soapAction="http://tempuri.org/GetObjectGUID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDescription">
+      <soap12:operation soapAction="http://tempuri.org/GetUserDescription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDescriptionINQ">
+      <soap12:operation soapAction="http://tempuri.org/GetUserDescriptionINQ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsedAttributesINQ">
+      <soap12:operation soapAction="http://tempuri.org/GetUsedAttributesINQ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap12:operation soapAction="http://tempuri.org/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllADDomainUsers">
+      <soap12:operation soapAction="http://tempuri.org/GetAllADDomainUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://192.168.7.120/nispActiveDirectoryWS/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://192.168.7.120/nispActiveDirectoryWS/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

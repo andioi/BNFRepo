@@ -1,8 +1,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26403.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebtChecking", "DebtChecking.csproj", "{AE97FA93-3916-4D0E-9FA0-A635A5DCC547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "..\Login\Login.csproj", "{AC370687-798B-43BE-989D-4714FC30F7DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,8 +16,15 @@ Global
 		{AE97FA93-3916-4D0E-9FA0-A635A5DCC547}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE97FA93-3916-4D0E-9FA0-A635A5DCC547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE97FA93-3916-4D0E-9FA0-A635A5DCC547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC370687-798B-43BE-989D-4714FC30F7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC370687-798B-43BE-989D-4714FC30F7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC370687-798B-43BE-989D-4714FC30F7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC370687-798B-43BE-989D-4714FC30F7DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB7D4E5A-AC42-4585-82A7-D464B5A927D6}
 	EndGlobalSection
 EndGlobal

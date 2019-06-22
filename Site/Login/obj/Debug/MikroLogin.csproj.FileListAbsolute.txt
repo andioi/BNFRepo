@@ -1,0 +1,85 @@
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroLogin\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroLogin\bin\MikroLogin.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroLogin\bin\MikroLogin.pdb
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroLogin\bin\DMS.Tools.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroLogin\obj\Debug\MikroLogin.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroLogin\obj\Debug\MikroLogin.pdb
+D:\projects\sahabat\Mikro\Site\login\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\sahabat\Mikro\Site\login\obj\Debug\MikroLogin.dll
+D:\projects\sahabat\Mikro\Site\login\bin\MikroLogin.dll
+D:\projects\sahabat\Mikro\Site\login\bin\MikroLogin.pdb
+D:\projects\sahabat\Mikro\Site\login\bin\DMS.Tools.dll
+D:\projects\sahabat\Mikro\Site\login\obj\Debug\MikroLogin.pdb
+D:\Project\Permata\Site\login\bin\MikroLogin.dll
+D:\Project\Permata\Site\login\bin\MikroLogin.pdb
+D:\Project\Permata\Site\login\bin\DMS.Tools.dll
+D:\Project\Permata\Site\login\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Permata\Site\login\obj\Debug\MikroLogin.dll
+D:\Project\Permata\Site\login\obj\Debug\MikroLogin.pdb
+D:\PRIVATES\Projects\NISP\Site\login\bin\MikroLogin.dll
+D:\PRIVATES\Projects\NISP\Site\login\bin\MikroLogin.pdb
+D:\PRIVATES\Projects\NISP\Site\login\bin\DMS.Tools.dll
+D:\PRIVATES\Projects\NISP\Site\login\obj\Debug\MikroLogin.csprojResolveAssemblyReference.cache
+D:\PRIVATES\Projects\NISP\Site\login\obj\Debug\MikroLogin.dll
+D:\PRIVATES\Projects\NISP\Site\login\obj\Debug\MikroLogin.pdb
+D:\PRIVATES\Projects\CSUL\Site\login\bin\MikroLogin.dll
+D:\PRIVATES\Projects\CSUL\Site\login\bin\MikroLogin.pdb
+D:\PRIVATES\Projects\CSUL\Site\login\bin\DMS.Tools.dll
+D:\PRIVATES\Projects\CSUL\Site\login\obj\Debug\MikroLogin.csprojResolveAssemblyReference.cache
+D:\PRIVATES\Projects\CSUL\Site\login\obj\Debug\MikroLogin.dll
+D:\PRIVATES\Projects\CSUL\Site\login\obj\Debug\MikroLogin.pdb
+D:\PRIVATES\Projects\UOB\Site\login\bin\MikroLogin.dll
+D:\PRIVATES\Projects\UOB\Site\login\bin\MikroLogin.pdb
+D:\PRIVATES\Projects\UOB\Site\login\bin\DMS.Tools.dll
+D:\PRIVATES\Projects\UOB\Site\login\bin\UOBISecurity.dll
+D:\PRIVATES\Projects\UOB\Site\login\obj\Debug\MikroLogin.csprojResolveAssemblyReference.cache
+D:\PRIVATES\Projects\UOB\Site\login\obj\Debug\MikroLogin.dll
+D:\PRIVATES\Projects\UOB\Site\login\obj\Debug\MikroLogin.pdb
+C:\Projects\SLIK UOB\Site\Login\bin\MikroLogin.dll.config
+C:\Projects\SLIK UOB\Site\Login\bin\MikroLogin.dll
+C:\Projects\SLIK UOB\Site\Login\bin\MikroLogin.pdb
+C:\Projects\SLIK UOB\Site\Login\bin\DMS.Tools.dll
+C:\Projects\SLIK UOB\Site\Login\obj\Debug\MikroLogin.csprojResolveAssemblyReference.cache
+C:\Projects\SLIK UOB\Site\Login\obj\Debug\MikroLogin.dll
+C:\Projects\SLIK UOB\Site\Login\obj\Debug\MikroLogin.pdb
+C:\Projects\Citibank\Site\Login\bin\MikroLogin.dll.config
+C:\Projects\Citibank\Site\Login\bin\MikroLogin.dll
+C:\Projects\Citibank\Site\Login\bin\MikroLogin.pdb
+C:\Projects\Citibank\Site\Login\bin\DMS.Tools.dll
+C:\Projects\Citibank\Site\Login\obj\Debug\MikroLogin.csprojResolveAssemblyReference.cache
+C:\Projects\Citibank\Site\Login\obj\Debug\MikroLogin.dll
+C:\Projects\Citibank\Site\Login\obj\Debug\MikroLogin.pdb
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\Login\bin\MikroLogin.dll
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\Login\bin\MikroLogin.pdb
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\Login\bin\DMS.Tools.dll
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\Login\obj\Debug\MikroLogin.dll
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\Login\obj\Debug\MikroLogin.pdb
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\Login\obj\Debug\MikroLogin.csprojResolveAssemblyReference.cache
+C:\Projects\CSUL\SLIK\Site\Login\bin\MikroLogin.dll.config
+C:\Projects\CSUL\SLIK\Site\Login\bin\MikroLogin.dll
+C:\Projects\CSUL\SLIK\Site\Login\bin\MikroLogin.pdb
+C:\Projects\CSUL\SLIK\Site\Login\bin\DMS.Tools.dll
+C:\Projects\CSUL\SLIK\Site\Login\obj\Debug\MikroLogin.csprojResolveAssemblyReference.cache
+C:\Projects\CSUL\SLIK\Site\Login\obj\Debug\MikroLogin.dll
+C:\Projects\CSUL\SLIK\Site\Login\obj\Debug\MikroLogin.pdb
+C:\Projects\BTPN\Site\Login\bin\MikroLogin.dll.config
+C:\Projects\BTPN\Site\Login\bin\MikroLogin.dll
+C:\Projects\BTPN\Site\Login\bin\MikroLogin.pdb
+C:\Projects\BTPN\Site\Login\bin\DMS.Tools.dll
+C:\Projects\BTPN\Site\Login\obj\Debug\MikroLogin.dll
+C:\Projects\BTPN\Site\Login\obj\Debug\MikroLogin.pdb
+C:\Projects\BTPN\Site\Login\obj\Debug\MikroLogin.csprojResolveAssemblyReference.cache
+C:\Projects\HFI\Site\Login\bin\MikroLogin.dll.config
+C:\Projects\HFI\Site\Login\bin\MikroLogin.dll
+C:\Projects\HFI\Site\Login\bin\MikroLogin.pdb
+C:\Projects\HFI\Site\Login\bin\DMS.Tools.dll
+C:\Projects\HFI\Site\Login\obj\Debug\MikroLogin.csprojResolveAssemblyReference.cache
+C:\Projects\HFI\Site\Login\obj\Debug\MikroLogin.dll
+C:\Projects\HFI\Site\Login\obj\Debug\MikroLogin.pdb
+C:\Projects\BSM\Site\Login\bin\MikroLogin.dll.config
+C:\Projects\BSM\Site\Login\bin\MikroLogin.dll
+C:\Projects\BSM\Site\Login\bin\MikroLogin.pdb
+C:\Projects\BSM\Site\Login\bin\DMS.Tools.dll
+C:\Projects\BSM\Site\Login\obj\Debug\MikroLogin.csprojResolveAssemblyReference.cache
+C:\Projects\BSM\Site\Login\obj\Debug\MikroLogin.dll
+C:\Projects\BSM\Site\Login\obj\Debug\MikroLogin.pdb
