@@ -1,0 +1,14 @@
+<script src="../include/cek_entries.js" language="javascript" type="text/javascript"></script>
+
+<script for="document" event="onkeypress" language="javascript" type="text/javascript">
+	if (event.keyCode==39)
+		event.keyCode = 0;
+</script>
+<script language="javascript" type="text/javascript">
+var processing = false;
+</script>
+<script for="form1" event="onsubmit" language="javascript" type="text/javascript">
+	if (processing) return false;	
+	processing = true;
+	return true;
+</script>

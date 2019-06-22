@@ -1,0 +1,58 @@
+<script language="javascript">
+var popupWindow = null;
+
+function PopupPage(href,width,height,scroll)
+{
+    if (popupWindow!=null) return;
+    var X = (screen.availWidth-width)/2;
+    var Y = (screen.availHeight-height)/2;
+
+    if (scroll==null) scroll = "no";
+    popupWindow = window.open(href,"ccPopup",
+    "height="+height+"px,width="+width+"px,left="+X+",top="+Y+
+    ",status=no,toolbar=no,scrollbars="+scroll+",titlebar=no,menubar=no,location=no,dependent=yes");
+}
+function PopupViewer()
+{
+	var head = null;
+	try {
+	if (window.parent!=null && window.parent.frames.length>=3)
+		head = window.parent.frames(0).document.Form1;
+	if (head!=null) {
+		head.regno.value = Form1.reg_no.value;
+		head.popup.click();
+	} } catch (e) { }
+}
+</script>
+<script for=window event=onfocus language="javascript">
+ // focuspopup()
+    if (popupWindow!=null)
+    {
+        if (popupWindow.closed)
+            popupWindow = null;
+        else popupWindow.focus();
+    }
+	var head = null;
+	try {
+		if (window.parent!=null && window.parent.frames.length>=3)
+			head = window.parent.frames(0).document.Form1;
+		if (head!=null) head.focus.click();
+	} catch (e) { }
+</script>
+<script for=document event=onreadystatechange language="javascript">
+	if (document.readyState=='interactive' || document.readyState=='complete')
+	try {
+		var head = null;
+		if (window.parent!=null && window.parent.frames.length>=3)
+			head = window.parent.frames(0).document.Form1;
+		if (head!=null) head.focus.click();
+	}	catch (e) { }
+</script>
+<script for=window event=onunload language="javascript">
+ // closepopup()
+    if (popupWindow!=null)
+    {
+        popupWindow.close();
+        popupWindow = null;
+    }
+</script>

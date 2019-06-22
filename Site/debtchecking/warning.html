@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Warning Page</title>
+	<link href="include/style.css" type="text/css" rel="stylesheet" />
+	<script for="window" event="onunload">
+		if (window.opener!=null)
+		window.opener.execScript('warn_closed()');
+	</script>
+</head>
+<body>
+
+		<table width="100%" bgcolor="#ffffff" border="0">
+			<tr>
+				<td height="20">&nbsp;</td>
+			</tr>
+			<tr bgcolor="#fFFFFF">
+				<td valign="middle" align="center">
+					<table cellspacing="0" cellpadding="0" border="0" width="300">
+						<tr>
+							<td colspan="2" height="71"><img src="image/header03.jpg" alt="" /></td>
+						</tr>
+						<tr>
+							<td width="25" valign="top">
+							    <font style="FONT-SIZE: 8pt" face="Verdana,arial" color="red">
+							        <b><br />Warning!&nbsp;</b>
+							    </font>
+							</td>
+							<td height="15">
+							    <font style="FONT-SIZE: 8pt" face="Verdana,arial" color="navy">
+							        <b><br />Your session has been idle.</b>
+								</font>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="2" height="15">
+							    <font style="FONT-SIZE: 8pt" face="Verdana,arial" color="navy">
+							        <b>
+							        The system will automatically close your session after several minutes of inactivity.
+							        <br />
+									<br />
+									To keep your session, close this window before the timeout period elapses...
+									</b>
+								</font>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+							    &nbsp;
+							</td>
+						</tr>
+						<!-- <tr>
+							<td colspan="2" height="26">
+							    <img src="image/warn2.jpg" alt="" />
+							</td>
+						</tr> -->
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td height="20"></td>
+			</tr>
+		</table>
+		
+</body>
+</html>

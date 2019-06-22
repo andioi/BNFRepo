@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE97FA93-3916-4D0E-9FA0-A635A5DCC547}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DebtChecking</RootNamespace>
+    <AssemblyName>DebtChecking</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.DataAccess.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.DataAccess.v17.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Diagram.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Docs.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.1.Drawing, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Pdf.v17.1.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Snap.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Snap.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Spreadsheet.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Utils.v17.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Bootstrap.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.Bootstrap.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Xpo.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraBars.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraCharts.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraCharts.v17.1.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraDiagram.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1.Design, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraGauges.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraLayout.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraNavBar.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1.Design, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Design, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraReports.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1.Import, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Web, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraRichEdit.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraRichEdit.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraTreeList.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraVerticalGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DMS.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DMS.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="DMS.Tools, Version=1.0.3451.32074, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DMS.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="DMSControls, Version=1.0.6468.41224, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DMSControls.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>packages\EPPlus.4.5.1\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="evohtmltopdf, Version=3.5.0.0, Culture=neutral, PublicKeyToken=5b5f377bc08a4d32, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>classes\evohtmltopdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Office, Version=2.1.0.0, Culture=neutral" />
+    <Reference Include="Interop.Word, Version=8.1.0.0, Culture=neutral" />
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>classes\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>classes\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="authenticate.aspx.cs">
+      <DependentUpon>authenticate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="authenticate.aspx.designer.cs">
+      <DependentUpon>authenticate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Body.aspx.cs">
+      <DependentUpon>Body.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Body.aspx.designer.cs">
+      <DependentUpon>Body.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\clsExcel.cs" />
+    <Compile Include="CommonForm\clsMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\clsTiffManager.cs" />
+    <Compile Include="CommonForm\ListNonPV.aspx.cs">
+      <DependentUpon>ListNonPV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\ListNonPV.aspx.designer.cs">
+      <DependentUpon>ListNonPV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\ListAgency.aspx.cs">
+      <DependentUpon>ListAgency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\ListAgency.aspx.designer.cs">
+      <DependentUpon>ListAgency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\ListRestoreData.aspx.cs">
+      <DependentUpon>ListRestoreData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\ListRestoreData.aspx.designer.cs">
+      <DependentUpon>ListRestoreData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_ReputasiCustomer.ascx.cs">
+      <DependentUpon>UC_ReputasiCustomer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_ReputasiCustomer.ascx.designer.cs">
+      <DependentUpon>UC_ReputasiCustomer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_ReputasiDetail.ascx.cs">
+      <DependentUpon>UC_ReputasiDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_ReputasiDetail.ascx.designer.cs">
+      <DependentUpon>UC_ReputasiDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_TenorDetail.ascx.cs">
+      <DependentUpon>UC_TenorDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_TenorDetail.ascx.designer.cs">
+      <DependentUpon>UC_TenorDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_UploadedFile.ascx.cs">
+      <DependentUpon>UC_UploadedFile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_UploadedFile.ascx.designer.cs">
+      <DependentUpon>UC_UploadedFile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\ApprovalSLIK.aspx.cs">
+      <DependentUpon>ApprovalSLIK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\ApprovalSLIK.aspx.designer.cs">
+      <DependentUpon>ApprovalSLIK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\ApprovalSLIK2.aspx.cs">
+      <DependentUpon>ApprovalSLIK2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\ApprovalSLIK2.aspx.designer.cs">
+      <DependentUpon>ApprovalSLIK2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\InqRequestSID.aspx.cs">
+      <DependentUpon>InqRequestSID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\InqRequestSID.aspx.designer.cs">
+      <DependentUpon>InqRequestSID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\MMUE.aspx.cs">
+      <DependentUpon>MMUE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\MMUE.aspx.designer.cs">
+      <DependentUpon>MMUE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\ReputasiCustomer.aspx.cs">
+      <DependentUpon>ReputasiCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\ReputasiCustomer.aspx.designer.cs">
+      <DependentUpon>ReputasiCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\ReputasiDetail.aspx.cs">
+      <DependentUpon>ReputasiDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\ReputasiDetail.aspx.designer.cs">
+      <DependentUpon>ReputasiDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\RequestSLIK.aspx.cs">
+      <DependentUpon>RequestSLIK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\RequestSLIK.aspx.designer.cs">
+      <DependentUpon>RequestSLIK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\ScoringBureau.aspx.cs">
+      <DependentUpon>ScoringBureau.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\ScoringBureau.aspx.designer.cs">
+      <DependentUpon>ScoringBureau.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\TenorDetail.aspx.cs">
+      <DependentUpon>TenorDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\TenorDetail.aspx.designer.cs">
+      <DependentUpon>TenorDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\UploadRestoreData.aspx.cs">
+      <DependentUpon>UploadRestoreData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\UploadRestoreData.aspx.designer.cs">
+      <DependentUpon>UploadRestoreData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\UploadTemplateMaster.aspx.cs">
+      <DependentUpon>UploadTemplateMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\UploadTemplateMaster.aspx.designer.cs">
+      <DependentUpon>UploadTemplateMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\ADDRMATCH.aspx.cs">
+      <DependentUpon>ADDRMATCH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\ADDRMATCH.aspx.designer.cs">
+      <DependentUpon>ADDRMATCH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\BatchApproval.aspx.cs">
+      <DependentUpon>BatchApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\BatchApproval.aspx.designer.cs">
+      <DependentUpon>BatchApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\BulkRecalculate.aspx.cs">
+      <DependentUpon>BulkRecalculate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\BulkRecalculate.aspx.designer.cs">
+      <DependentUpon>BulkRecalculate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\Collateral.aspx.cs">
+      <DependentUpon>Collateral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\Collateral.aspx.designer.cs">
+      <DependentUpon>Collateral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\CustomCreditSummary.aspx.cs">
+      <DependentUpon>CustomCreditSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\CustomCreditSummary.aspx.designer.cs">
+      <DependentUpon>CustomCreditSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\DetailValidation.aspx.cs">
+      <DependentUpon>DetailValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\DetailValidation.aspx.designer.cs">
+      <DependentUpon>DetailValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\IdebJson.cs" />
+    <Compile Include="SLIK\LoanCalculator.aspx.cs">
+      <DependentUpon>LoanCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\LoanCalculator.aspx.designer.cs">
+      <DependentUpon>LoanCalculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\ManualMatching.aspx.cs">
+      <DependentUpon>ManualMatching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\ManualMatching.aspx.designer.cs">
+      <DependentUpon>ManualMatching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\ManualReview.aspx.cs">
+      <DependentUpon>ManualReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\ManualReview.aspx.designer.cs">
+      <DependentUpon>ManualReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\PefindoResult.aspx.cs">
+      <DependentUpon>PefindoResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\PefindoResult.aspx.designer.cs">
+      <DependentUpon>PefindoResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\UploadBatch.aspx.cs">
+      <DependentUpon>UploadBatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\UploadBatch.aspx.designer.cs">
+      <DependentUpon>UploadBatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\UploadBatchReport.aspx.cs">
+      <DependentUpon>UploadBatchReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\UploadBatchReport.aspx.designer.cs">
+      <DependentUpon>UploadBatchReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\ViewPDF.aspx.cs">
+      <DependentUpon>ViewPDF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\ViewPDF.aspx.designer.cs">
+      <DependentUpon>ViewPDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\ViewPDFPefindo.aspx.cs">
+      <DependentUpon>ViewPDFPefindo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\ViewPDFPefindo.aspx.designer.cs">
+      <DependentUpon>ViewPDFPefindo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\SLIKCreditSummary.aspx.cs">
+      <DependentUpon>SLIKCreditSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\SLIKCreditSummary.aspx.designer.cs">
+      <DependentUpon>SLIKCreditSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\SLIKNotFound.aspx.cs">
+      <DependentUpon>SLIKNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\SLIKNotFound.aspx.designer.cs">
+      <DependentUpon>SLIKNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\DetailCustomer.aspx.cs">
+      <DependentUpon>DetailCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\DetailCustomer.aspx.designer.cs">
+      <DependentUpon>DetailCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLIK\SLIKResult.aspx.cs">
+      <DependentUpon>SLIKResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLIK\SLIKResult.aspx.designer.cs">
+      <DependentUpon>SLIKResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\FileUpload.aspx.cs">
+      <DependentUpon>FileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\FileUpload.aspx.designer.cs">
+      <DependentUpon>FileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\IMG_OpenImg.aspx.cs">
+      <DependentUpon>IMG_OpenImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\IMG_OpenImg.aspx.designer.cs">
+      <DependentUpon>IMG_OpenImg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\IMG_TifImg.aspx.cs">
+      <DependentUpon>IMG_TifImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\IMG_TifImg.aspx.designer.cs">
+      <DependentUpon>IMG_TifImg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\ListDetail.aspx.cs">
+      <DependentUpon>ListDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\ListDetail.aspx.designer.cs">
+      <DependentUpon>ListDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\ListSend.aspx.cs">
+      <DependentUpon>ListSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\ListSend.aspx.designer.cs">
+      <DependentUpon>ListSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\Memo.aspx.cs">
+      <DependentUpon>Memo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\Memo.aspx.designer.cs">
+      <DependentUpon>Memo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\RefCh.aspx.cs">
+      <DependentUpon>RefCh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\RefCh.aspx.designer.cs">
+      <DependentUpon>RefCh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\RefSearch.aspx.cs">
+      <DependentUpon>RefSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\RefSearch.aspx.designer.cs">
+      <DependentUpon>RefSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\ReportList.aspx.cs">
+      <DependentUpon>ReportList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\ReportList.aspx.designer.cs">
+      <DependentUpon>ReportList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\ReportPivot.aspx.cs">
+      <DependentUpon>ReportPivot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\ReportPivot.aspx.designer.cs">
+      <DependentUpon>ReportPivot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\ReportSet.aspx.cs">
+      <DependentUpon>ReportSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\ReportSet.aspx.designer.cs">
+      <DependentUpon>ReportSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_DecResult.ascx.cs">
+      <DependentUpon>UC_DecResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_DecResult.ascx.designer.cs">
+      <DependentUpon>UC_DecResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_EarmarkInfo.ascx.cs">
+      <DependentUpon>UC_EarmarkInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_EarmarkInfo.ascx.designer.cs">
+      <DependentUpon>UC_EarmarkInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_GeneralInfo.ascx.cs">
+      <DependentUpon>UC_GeneralInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_GeneralInfo.ascx.designer.cs">
+      <DependentUpon>UC_GeneralInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_GenExcel.ascx.cs">
+      <DependentUpon>UC_GenExcel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_GenExcel.ascx.designer.cs">
+      <DependentUpon>UC_GenExcel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_GenWord.ascx.cs">
+      <DependentUpon>UC_GenWord.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_GenWord.ascx.designer.cs">
+      <DependentUpon>UC_GenWord.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_ListDetail.ascx.cs">
+      <DependentUpon>UC_ListDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_ListDetail.ascx.designer.cs">
+      <DependentUpon>UC_ListDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_ListFilter.ascx.cs">
+      <DependentUpon>UC_ListFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_ListFilter.ascx.designer.cs">
+      <DependentUpon>UC_ListFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_ReportFilter.ascx.cs">
+      <DependentUpon>UC_ReportFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_ReportFilter.ascx.designer.cs">
+      <DependentUpon>UC_ReportFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_UploadFile.ascx.cs">
+      <DependentUpon>UC_UploadFile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_UploadFile.ascx.designer.cs">
+      <DependentUpon>UC_UploadFile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\CancelApp.aspx.cs">
+      <DependentUpon>CancelApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\CancelApp.aspx.designer.cs">
+      <DependentUpon>CancelApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\Collateral.aspx.cs">
+      <DependentUpon>Collateral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\Collateral.aspx.designer.cs">
+      <DependentUpon>Collateral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\FinancialCalc2.aspx.cs">
+      <DependentUpon>FinancialCalc2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\FinancialCalc2.aspx.designer.cs">
+      <DependentUpon>FinancialCalc2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\FinancialCalcSwitch.aspx.cs">
+      <DependentUpon>FinancialCalcSwitch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\FinancialCalcSwitch.aspx.designer.cs">
+      <DependentUpon>FinancialCalcSwitch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\FinancialCalc.aspx.cs">
+      <DependentUpon>FinancialCalc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\FinancialCalc.aspx.designer.cs">
+      <DependentUpon>FinancialCalc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\DupcheckResult.aspx.cs">
+      <DependentUpon>DupcheckResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\DupcheckResult.aspx.designer.cs">
+      <DependentUpon>DupcheckResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\CreditSummary.aspx.cs">
+      <DependentUpon>CreditSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\CreditSummary.aspx.designer.cs">
+      <DependentUpon>CreditSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities\InqStatus.aspx.cs">
+      <DependentUpon>InqStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities\InqStatus.aspx.designer.cs">
+      <DependentUpon>InqStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.aspx.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footer.aspx.designer.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenMenu.aspx.cs">
+      <DependentUpon>ScreenMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMenu.aspx.designer.cs">
+      <DependentUpon>ScreenMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleEncryption.cs" />
+    <Compile Include="unittest.aspx.cs">
+      <DependentUpon>unittest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="unittest.aspx.designer.cs">
+      <DependentUpon>unittest.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="authenticate.aspx" />
+    <Content Include="Body.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="classes\DMS.Framework.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="classes\DMS.Tools.dll" />
+    <Content Include="classes\DMSControls.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CommonForm\FileUpload.aspx" />
+    <Content Include="CommonForm\IMG_OpenImg.aspx" />
+    <Content Include="CommonForm\IMG_TifImg.aspx" />
+    <Content Include="CommonForm\ListDetail.aspx" />
+    <Content Include="CommonForm\ListRestoreData.aspx" />
+    <Content Include="CommonForm\ListSend.aspx" />
+    <Content Include="CommonForm\Memo.aspx" />
+    <Content Include="CommonForm\RefCh.aspx" />
+    <Content Include="CommonForm\RefSearch.aspx" />
+    <Content Include="CommonForm\ReportList.aspx" />
+    <Content Include="CommonForm\ReportPivot.aspx" />
+    <Content Include="CommonForm\ReportSet.aspx" />
+    <Content Include="CommonForm\UC_DecResult.ascx" />
+    <Content Include="CommonForm\UC_EarmarkInfo.ascx" />
+    <Content Include="CommonForm\UC_GeneralInfo.ascx" />
+    <Content Include="CommonForm\UC_GenExcel.ascx" />
+    <Content Include="CommonForm\UC_GenWord.ascx" />
+    <Content Include="CommonForm\UC_ListDetail.ascx" />
+    <Content Include="CommonForm\UC_ListFilter.ascx" />
+    <Content Include="CommonForm\UC_ReportFilter.ascx" />
+    <Content Include="CommonForm\UC_ReputasiCustomer.ascx" />
+    <Content Include="CommonForm\UC_ReputasiDetail.ascx" />
+    <Content Include="CommonForm\UC_TenorDetail.ascx" />
+    <Content Include="CommonForm\UC_UploadFile.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Facilities\ApprovalSLIK.aspx" />
+    <Content Include="Facilities\ApprovalSLIK2.aspx" />
+    <Content Include="Facilities\CancelApp.aspx" />
+    <Content Include="Facilities\InqRequestSID.aspx" />
+    <Content Include="Facilities\InqStatus.aspx" />
+    <Content Include="Facilities\ReputasiCustomer.aspx" />
+    <Content Include="Facilities\ReputasiDetail.aspx" />
+    <Content Include="Facilities\RequestSLIK.aspx" />
+    <Content Include="Facilities\TenorDetail.aspx" />
+    <Content Include="Facilities\UploadRestoreData.aspx" />
+    <Content Include="Facilities\UploadTemplateMaster.aspx" />
+    <Content Include="Footer.aspx" />
+    <Content Include="image\back.jpg" />
+    <Content Include="image\Complete.GIF" />
+    <Content Include="image\dt-arrow-dn.png" />
+    <Content Include="image\dt-arrow-up.png" />
+    <Content Include="image\header.jpg" />
+    <Content Include="image\header01.JPG" />
+    <Content Include="image\header02.jpg" />
+    <Content Include="image\header03.jpg" />
+    <Content Include="image\kotak.jpg" />
+    <Content Include="image\logout.jpg" />
+    <Content Include="image\MainMenu.jpg" />
+    <Content Include="image\menu\arrow.gif" />
+    <Content Include="image\menu\arrow_over.gif" />
+    <Content Include="image\menu\arrow_white.gif" />
+    <Content Include="image\menu\break.gif" />
+    <Content Include="image\menu\bullet.gif" />
+    <Content Include="image\menu\bullet_over.gif" />
+    <Content Include="image\sprite.png" />
+    <Content Include="image\ucdt.gif" />
+    <Content Include="image\UnComplete.gif" />
+    <Content Include="image\warn1.jpg" />
+    <Content Include="image\warn2.jpg" />
+    <Content Include="include\calc.js" />
+    <Content Include="include\calcinstallment.js" />
+    <Content Include="include\cek_entries.html" />
+    <Content Include="include\cek_entries.js" />
+    <Content Include="include\cek_entries.vbs" />
+    <Content Include="include\cek_mandatory.html" />
+    <Content Include="include\cek_mandatoryOnly.html" />
+    <Content Include="include\cek_mandatoryOnly.js" />
+    <Content Include="include\date_picker.css" />
+    <Content Include="include\date_picker.html" />
+    <Content Include="include\date_picker.js" />
+    <Content Include="include\detools.js" />
+    <Content Include="include\GridView.css" />
+    <Content Include="include\menu.js" />
+    <Content Include="include\menuStyle.css" />
+    <Content Include="include\neraca.js" />
+    <Content Include="include\onepost.html" />
+    <Content Include="include\onepost.js" />
+    <Content Include="include\OpenWindow.html" />
+    <Content Include="include\popup.html" />
+    <Content Include="include\reflist.js" />
+    <Content Include="include\style.css" />
+    <Content Include="include\uc\UC_Currency.html" />
+    <Content Include="include\uc\UC_Date.html" />
+    <Content Include="include\uc\UC_Decimal.html" />
+    <Content Include="include\uc\UC_Number.html" />
+    <Content Include="include\uc\UC_SignedCurrency.html" />
+    <Content Include="include\UC_Currency.js" />
+    <Content Include="include\UC_SignedCurrency.js" />
+    <Content Include="include\UC_TXT_DECIMAL.js" />
+    <Content Include="Logout.aspx" />
+    <Content Include="main.html" />
+    <Content Include="ScreenMenu.aspx" />
+    <Content Include="SLIK\ADDRMATCH.aspx" />
+    <Content Include="SLIK\BatchApproval.aspx" />
+    <Content Include="SLIK\BulkRecalculate.aspx" />
+    <Content Include="SLIK\Collateral.aspx" />
+    <Content Include="SLIK\CustomCreditSummary.aspx" />
+    <Content Include="SLIK\DetailValidation.aspx" />
+    <Content Include="SLIK\LoanCalculator.aspx" />
+    <Content Include="SLIK\ManualMatching.aspx" />
+    <Content Include="SLIK\ManualReview.aspx" />
+    <Content Include="SLIK\notyetuploaded.html" />
+    <Content Include="SLIK\PefindoResult.aspx" />
+    <Content Include="SLIK\UploadBatch.aspx" />
+    <Content Include="SLIK\UploadBatchReport.aspx" />
+    <Content Include="SLIK\ViewPDF.aspx" />
+    <Content Include="SLIK\ViewPDFPefindo.aspx" />
+    <Content Include="SLIK\SLIKCreditSummary.aspx" />
+    <Content Include="SLIK\SLIKNotFound.aspx" />
+    <Content Include="SLIK\DetailCustomer.aspx" />
+    <Content Include="SLIK\SLIKResult.aspx" />
+    <Content Include="unittest.aspx" />
+    <Content Include="warning.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CommonForm\ListNonPV.aspx" />
+    <Content Include="CommonForm\ListAgency.aspx" />
+    <Content Include="CommonForm\UC_UploadedFile.ascx" />
+    <Content Include="Facilities\Collateral.aspx" />
+    <Content Include="Facilities\MMUE.aspx" />
+    <Content Include="Facilities\FinancialCalc2.aspx" />
+    <Content Include="Facilities\FinancialCalcSwitch.aspx" />
+    <Content Include="Facilities\FinancialCalc.aspx" />
+    <Content Include="Facilities\DupcheckResult.aspx" />
+    <Content Include="Facilities\CreditSummary.aspx" />
+    <Content Include="Facilities\ScoringBureau.aspx" />
+    <Content Include="formattpl.html" />
+    <Content Include="header.aspx" />
+    <Content Include="image\loading.gif" />
+    <Content Include="include\arrow.gif" />
+    <Content Include="include\ddsmoothmenu.css" />
+    <Content Include="include\ddsmoothmenu.js" />
+    <Content Include="include\jquery.min.js" />
+    <Content Include="include\screenmenu.css" />
+    <Content Include="Upload\VerFiles\1104050110006\HOME\H2802050_1.jpg" />
+    <Content Include="Upload\VerFiles\1104050110006\HOME\H2802050_2.jpg" />
+    <Content Include="Upload\VerFiles\1104050110006\OFFICE\O2802050_1.jpg" />
+    <Content Include="Upload\VerFiles\1104050110006\OFFICE\O2802050_2.jpg" />
+    <Content Include="Upload\VerFiles\1104050110007\HOME\H2801818_1.jpg" />
+    <Content Include="Upload\VerFiles\1104050110007\HOME\H2801818_2.jpg" />
+    <Content Include="Upload\VerFiles\1104050110007\OFFICE\O2801818_1.jpg" />
+    <Content Include="Upload\VerFiles\1104050110007\OFFICE\O2801818_2.jpg" />
+    <Content Include="Upload\VerFiles\1104050110008\HOME\H2803503_1.jpg" />
+    <Content Include="Upload\VerFiles\1104050110008\HOME\H2803503_2.jpg" />
+    <Content Include="Upload\VerFiles\1104050110008\OFFICE\O2803503_1.jpg" />
+    <Content Include="Upload\VerFiles\1104050110008\OFFICE\O2803503_2.jpg" />
+    <Content Include="Upload\VerFiles\1104050110009\HOME\H2803984_1.jpg" />
+    <Content Include="Upload\VerFiles\1104050110009\HOME\H2803984_2.jpg" />
+    <Content Include="Upload\VerFiles\1104050110009\OFFICE\O2803984_1.jpg" />
+    <Content Include="Upload\VerFiles\1104050110009\OFFICE\O2803984_2.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Upload\Report\ss0_Convertion Result.csv" />
+    <None Include="Upload\Report\ss0_Convertion Result.rtf" />
+    <None Include="Upload\Report\ss0_Convertion Result.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Upload\Batch\" />
+    <Folder Include="Upload\Phone\" />
+    <Folder Include="Upload\Physical\" />
+    <Folder Include="Upload\Temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1705</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/cbasdemosite</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

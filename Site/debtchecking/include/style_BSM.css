@@ -1,0 +1,490 @@
+INPUT
+{FONT-SIZE: 11px;COLOR: black;FONT-FAMILY: verdana;text-transform:uppercase;}
+
+TEXTAREA
+{FONT-SIZE: 11px;FONT-FAMILY: verdana;text-transform:uppercase;}
+
+TABLE
+{
+	border-right: black 0px solid;
+	border-top: black 0px solid;
+	font-size: 11px;
+	border-left: black 0px solid;
+	border-bottom: black 0px solid;
+	font-family: Tahoma, verdana,  Arial;
+}
+
+BODY
+{
+	margin-top: 0px;
+	font-size: 11px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-family: Tahoma, verdana, Arial;
+}
+
+A:link {color: blue;}A:visited {color: blue;}A:hover {color: blue; cursor:pointer;}
+
+SELECT
+{FONT-SIZE: 11px;FONT-FAMILY: verdana;}
+
+TD
+{
+	HEIGHT: 21px;
+}
+
+IMG
+{border:0px solid black;}
+
+LEGEND
+{background-color:white;text-align:left;color:black;
+font-weight:bold;font-size:11px;HEIGHT:20px}
+
+.mandatory
+{background-color:#f4fbac;}
+
+.mandatory2
+{background-color:#f4fbac;}
+
+.td
+{border:1px solid black;}
+
+.Dg1
+{
+	font-family: arial;
+	font-size: small;
+	border: solid 1px #7f7f7f;
+	background-color: #ffffff;
+}
+
+.Dg2
+{
+	font-family: Times New Roman;
+	font-size: small;
+	border: solid 1px #7f7f7f;
+	background-color: #ffffff;
+}
+
+.Dg3
+{
+	font-family: Times New Roman;
+	font-size: small;
+	background-color: #ffffff;
+}
+
+.T1
+{
+	border-right: gray 1px solid;
+	border-top: gray 1px solid;
+	border-left: gray 1px solid;
+	border-bottom: gray 1px solid;
+	
+	
+	background-image: url('mItemBack.gif');	
+    background-repeat:repeat-x;	
+    background-position:top;				
+    
+	text-align:center; 
+	color:black; 
+	font-weight:bold;
+	font-size:12px;
+	font-family: Tahoma, Arial, Verdana;
+	height: 20px;
+	text-align: center;
+	text-transform:uppercase;
+}
+
+.S1
+{
+	border-style:solid;
+    border-width:1px;
+    border-color:Gray;
+    background-color:white;
+}
+.Box1
+{
+	background-color: white;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #005263 #C0C0C0 #C0C0C0 #005263;
+}
+
+.X
+{background-color:#b3e2da;color:black;
+border:1px groove #FFFFFF;text-align:right;}
+
+.Y
+{BORDER-BOTTOM: #000000 1px outset;background-color:white;color:black;}
+
+.mandatoryString
+{background-color:#eeffeb;}
+
+.Memo
+{overflow:visible;}
+
+.Tbl0
+{
+	width:100%;
+    border-style:hidden;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+	border-spacing:0px;
+}
+.Tbl02
+{
+    border-style:hidden;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+	border-spacing:0px;
+}
+
+.F1
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:#b3e2da;
+	color:black;
+	text-align:center; 
+	height:27px;
+}
+
+.F2
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:#b3e2da;
+	color:black;
+	text-align:left; 
+	height:27px;
+}
+
+.H0
+{ 
+	border:0px solid black;
+	color:#fffff0; 
+	font-weight:bold 
+}
+
+.H1
+{
+	border-right: gray 1px solid;
+	border-top: gray 1px solid;
+	border-left: gray 1px solid;
+	border-bottom: gray 1px solid;
+	
+	
+	background-image: url('mItemBack.gif');	
+    background-repeat:repeat-x;	
+    background-position:top;				
+    
+	text-align:center; 
+	color:black; 
+	font-weight:bold;
+	font-size:12px;
+	font-family: Tahoma, Arial, Verdana;
+	height: 20px;
+	text-align: center;
+	text-transform:uppercase;
+}
+
+.H2
+{
+    border-style:solid;
+	border-width:1px;
+	border-color:Gray;
+	background-color:#FBD688; 
+	text-align:center; 
+	vertical-align:middle;
+	color:#18386B; 
+	font-weight:bold;
+	font-size:10px;
+	HEIGHT:18px
+}
+
+.H3
+{
+	border-right: gray 1px solid;
+	border-top: gray 1px solid;
+	border-left: gray 1px solid;
+	border-bottom: gray 1px solid;
+	background-color:#B5C7E7; 
+	text-align:center; 
+	color:#18386B; 
+	font-weight:bold;
+	font-size:12px;
+	font-family: Times New Roman;
+	height: 20px;
+	text-align: center;
+}
+
+.H4
+{
+	border-right: gray 1px solid;
+	border-top: gray 1px solid;
+	border-left: gray 1px solid;
+	border-bottom: gray 1px solid;
+	background-color:#B5C7E7; 
+	text-align:center; 
+	color:#18386B; 
+	font-weight:bold;
+	font-size:16px;
+	font-family: Times New Roman;
+	height: 20px;
+	text-align: center;
+	text-transform:uppercase;
+}
+
+.H5
+{
+	border-right: gray 1px solid;
+	border-top: gray 1px solid;
+	border-left: gray 1px solid;
+	border-bottom: gray 1px solid;
+	background-color:#B5C7E7; 
+	text-align:center; 
+	color:#18386B; 
+	font-weight:bold;
+	font-size:12px;
+	font-family: Times New Roman;
+	height: 20px;
+	text-align: center;
+	text-transform:uppercase;
+}
+.HT
+{
+    background: url(../image/sprite.png) repeat-x 0px 0px;
+    border-color: #989898 #cbcbcb #989898 #989898;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    color: #000;
+    padding: 4px 5px 4px 10px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.B01
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:white;				
+	color:white;
+	text-align:left; 
+	width:150px;
+	background-color:#00573D;
+	padding: 6px;
+}
+
+.B02
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:white;
+	background-color:#00573D;
+	color:black;
+}
+
+.B03
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:white;				
+	color:black;
+	text-align:right; 
+	width:150px;
+	background-color:#00573D;
+}
+
+.B04
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:white;
+	background-color:#e5ebf4;
+	color:black;
+	font-weight:bold;
+	font-family: Times New Roman;
+	font-size: small;
+}
+
+.B05
+{
+	font-weight:bold;
+	font-family: Calibri;
+	font-size: small;
+}
+
+.BS
+{
+	background-color:white;
+	border-color:white;
+	color:black;
+	vertical-align:middle;
+	width:1px;
+}
+
+.BS04
+{
+	background-color:white;
+	border-color:white;
+	color:black;
+	vertical-align:top;
+	width:8px;
+}
+
+.B11
+{
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#e5ebf4;
+	color:black;
+	text-align:left;
+}
+
+.B12
+{
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#e5ebf4;
+	color:black;
+	text-align:right;
+	vertical-align:middle;
+	font-family: Times New Roman;
+	font-size: small;
+}
+
+.B12A
+{
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#e5ebf4;
+	color:black;
+	font-family: Times New Roman;
+	font-size: small;
+	vertical-align:middle;
+}
+
+.Bt1
+{
+	border:1px outset #FFFFFF;
+	background-image: url('mVItemHBack.gif');	
+    background-repeat:repeat-x;	
+    background-position:top;
+	text-align:center; 
+	text-decoration: none;
+	color:black;
+	font-weight:bold;
+	font-size:11px;
+	height:23px;
+}
+
+.Bt2
+{
+	border:1px outset #FFFFFF;
+	background-image: url('mVItemHBack.gif');	
+    background-repeat:repeat-x;	
+    background-position:top;
+	text-align:center; 
+	text-decoration: none;
+	color:black;
+	font-weight:bold;
+	font-size:11px;
+	height:23px;
+}
+
+.Alt1
+{
+    background-color: #F6EBA9;
+}
+
+
+.bni 
+{
+	font-family :Times New Roman;
+	font-size : 18px;
+	font-weight :bold;
+}
+
+.tform 
+{
+	font-family :Arial;
+	font-size : 25px;
+	font-weight :bold;
+}
+
+.hform 
+{
+	font-family :Arial;
+	font-size : 15px;
+	
+}
+
+hr
+{
+	size : auto;
+	color :Black;
+}
+
+.tblenduser
+{
+	border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    font-size: 11px;
+    font-family: Tahoma, verdana,  Arial;
+}
+
+.terimatolak
+{
+	border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    font-size: 20px;
+    font-family: Tahoma, verdana,  Arial;
+    
+}
+.subtotal
+{
+	border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    font-size: 12px;
+    font-family: Tahoma, verdana,  Arial;
+    font-weight : bold;
+}
+.itemcurr
+{
+	border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    font-size: 11px;
+    font-family: Tahoma, verdana,  Arial;
+    text-align : right;
+}
+
+.totalcurr
+{
+	border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    font-size: 12px;
+    font-family: Tahoma, verdana,  Arial;
+    font-weight : bold;
+    text-align : right;
+}

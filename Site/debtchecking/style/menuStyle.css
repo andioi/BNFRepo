@@ -1,0 +1,77 @@
+BODY
+{
+	margin-top: 0px;
+	font-size: 11px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-family: Tahoma, verdana, Arial;
+}
+
+A:link {color: black;}A:visited {color: black;}A:hover {color: black;}
+
+.T1
+{
+	border-right: gray 1px solid;
+	border-top: gray 1px solid;
+	border-left: gray 1px solid;
+	border-bottom: gray 1px solid;
+	
+	
+	background-image: url('mItemBack.gif');	
+    background-repeat:repeat-x;	
+    background-position:top;				
+    
+	text-align:center; 
+	color:black; 
+	font-weight:bold;
+	font-size:12px;
+	font-family: Tahoma, Arial, Verdana;
+	height: 20px;
+	text-align: center;
+	text-transform:uppercase;
+}
+
+.H1
+{
+    border-style:solid;
+    border-width:1px;
+    border-color:white;
+    background-color:#084e94;
+    text-align:center;
+    color:White;
+    font-weight:bold;
+    font-size:12px;
+    vertical-align:middle;
+    height:20px
+}
+
+.S1
+{
+    border-style:solid;
+    border-width:1px;
+    border-color:Gray;
+    background-color:white;
+}
+
+.Box1
+{
+    background-color:white;
+    border-style:solid;
+    border-width:1px;
+    border-color:#084e94;
+}
+
+.Tbl0
+{
+    width:100%;
+    border-style:hidden;
+    border-top-width:0px;
+    border-bottom-width:0px;
+    border-left-width:0px;
+    border-right-width:0px;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    border-spacing:0px;
+}

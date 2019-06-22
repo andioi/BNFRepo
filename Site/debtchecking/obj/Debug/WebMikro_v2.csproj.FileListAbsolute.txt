@@ -1,0 +1,46 @@
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\WebMikro_v2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\WebMikro_v2.pdb
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.Data.v8.2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.Utils.v8.2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.Web.ASPxEditors.v8.2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.Web.ASPxGridView.v8.2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.Web.ASPxGridView.v8.2.Export.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.Web.ASPxPivotGrid.v8.2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.Web.ASPxPivotGrid.v8.2.Export.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.Web.ASPxTreeList.v8.2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.Web.ASPxTreeList.v8.2.Export.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.Web.v8.2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.XtraEditors.v8.2.Design.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.XtraEditors.v8.2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.XtraPivotGrid.v8.2.Core.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.XtraPivotGrid.v8.2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.XtraPrinting.v8.2.Design.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.XtraPrinting.v8.2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.XtraReports.v8.2.Design.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.XtraReports.v8.2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.XtraReports.v8.2.Import.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DevExpress.XtraReports.v8.2.Web.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DMS.Framework.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DMS.Tools.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\DMSControls.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\Interop.Microsoft.Office.Core.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\Interop.Office.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\Interop.Word.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\Microsoft.Office.Interop.Excel.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\Microsoft.Office.Interop.Word.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\office.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\bin\Microsoft.Vbe.Interop.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\obj\Debug\ResolveAssemblyReference.cache
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\obj\Debug\WebMikro_v2.dll
+D:\MANDIRI_KERJAAN\MANDIRI MIKRO\WebMikroSite\WebMikro_V2\obj\Debug\WebMikro_v2.pdb
+D:\projects\sahabat\Mikro\Site\mikro\bin\WebMikro_v2.dll
+D:\projects\sahabat\Mikro\Site\mikro\bin\WebMikro_v2.pdb
+D:\projects\sahabat\Mikro\Site\mikro\bin\DMS.Framework.dll
+D:\projects\sahabat\Mikro\Site\mikro\bin\DMS.Tools.dll
+D:\projects\sahabat\Mikro\Site\mikro\bin\DMSControls.dll
+D:\projects\sahabat\Mikro\Site\mikro\bin\Interop.Microsoft.Office.Core.dll
+D:\projects\sahabat\Mikro\Site\mikro\bin\Interop.Office.dll
+D:\projects\sahabat\Mikro\Site\mikro\bin\Interop.Word.dll
+D:\projects\sahabat\Mikro\Site\mikro\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\sahabat\Mikro\Site\mikro\obj\Debug\WebMikro_v2.dll
+D:\projects\sahabat\Mikro\Site\mikro\obj\Debug\WebMikro_v2.pdb
