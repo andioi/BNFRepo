@@ -10,27 +10,40 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>Request Checking</title>
+    <!-- CSS -->
     <link href="../include/style.css" type="text/css" rel="Stylesheet" />
-    <!-- #include file="~/include/onepost.html" -->
-    <!-- #include file="~/include/uc/UC_Date.html" -->
-    <!-- Bootstrap -->
     <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-	<script src="jquery.min.js"></script>
-	<script src="jquery.maskedinput.js"></script>
-    <script type="text/javascript" language="javascript">
+    <link href="../include/bootstrap-datetimepicker.css" type="text/css" rel="Stylesheet" />
+    <link href="../include/bootstrap-combobox.css" type="text/css" rel="Stylesheet" />
+    <!-- #include file="~/include/onepost.html" -->
+
+    <!-- Script -->
+	<script src="jquery.min.js" type="text/javascript"></script>
+    <script src="../include/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../include/moment-with-locales.js" type="text/javascript"></script>
+	<script src="jquery.maskedinput.js" type="text/javascript"></script>
+    <script src="../include/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <script src="../include/bootstrap-combobox.js" type="text/javascript"></script>
+    <script type="text/javascript">
         function ubahjenis(val) {
             if (val == "IND") {
                 document.getElementById("mainPanel_npwp").className = "";
                 document.getElementById("mainPanel_gender").className = "mandatory";
+                document.getElementById("mainPanel_ktp").className = "mandatory";
 
                 document.getElementById("mainPanel_tr_gender").style.display = "";
+                document.getElementById("mainPanel_tr_nationality").style.display = "";
+                document.getElementById("mainPanel_tr_marital").style.display = "";
                 document.getElementById("mainPanel_tr_mother_name").style.display = "";
 
             } else if (val == "PSH") {
                 document.getElementById("mainPanel_npwp").className = "mandatory";
                 document.getElementById("mainPanel_gender").className = "";
+                document.getElementById("mainPanel_ktp").className = "";
 
                 document.getElementById("mainPanel_tr_gender").style.display = "none";
+                document.getElementById("mainPanel_tr_nationality").style.display = "none";
+                document.getElementById("mainPanel_tr_marital").style.display = "none";
                 document.getElementById("mainPanel_tr_mother_name").style.display = "none";
             }
         }
@@ -38,16 +51,19 @@
             if (val == "IND") {
                 document.getElementById("PopupSID_PanelSID_supp_npwp").className = "";
                 document.getElementById("PopupSID_PanelSID_supp_gender").className = "mandatory";
+                document.getElementById("PopupSID_PanelSID_supp_ktp").className = "mandatory";
 
                 document.getElementById("PopupSID_PanelSID_tr_supp_gender").style.display = "";
                 document.getElementById("PopupSID_PanelSID_tr_supp_mother_name").style.display = "";
-
+                document.getElementById("PopupSID_PanelSID_tr_supp_nationality").style.display = "";
             } else if (val == "PSH") {
                 document.getElementById("PopupSID_PanelSID_supp_npwp").className = "mandatory";
                 document.getElementById("PopupSID_PanelSID_supp_gender").className = "";
+                document.getElementById("PopupSID_PanelSID_supp_ktp").className = "";
 
                 document.getElementById("PopupSID_PanelSID_tr_supp_gender").style.display = "none";
                 document.getElementById("PopupSID_PanelSID_tr_supp_mother_name").style.display = "none";
+                document.getElementById("PopupSID_PanelSID_tr_supp_nationality").style.display = "none";
             }
         }
 
@@ -56,12 +72,16 @@
             var noktp = document.getElementById("mainPanel_ktp").value;
             var nonpwp = document.getElementById("mainPanel_npwp").value;
             if (document.getElementById("mainPanel_cust_type_0").checked) {
-                if (noktp.length < 6) {
+                if (document.getElementById("mainPanel_nationality_0").checked && noktp.length != 16) {
                     alert("No KTP tidak valid!");
                     ret = false;
                 }
+                if (document.getElementById("mainPanel_nationality_1").checked && noktp.length < 6) {
+                    alert("No Paspor tidak valid!");
+                    ret = false;
+                }
             }
-            //if (document.getElementById("mainPanel_cust_type_1").checked) {
+            
             if (nonpwp.length > 0) {
                 if (nonpwp.length < 20 || nonpwp.length > 20) {
                     alert("No NPWP tidak valid!");
@@ -196,22 +216,37 @@
                                 <asp:ListItem Text="Perusahaan" Value="PSH" onclick="ubahjenis(this.value)"></asp:ListItem>
                                             </asp:RadioButtonList></td>
                         </tr>
+                        <tr id="tr_nationality" runat="server">
+                            <td class="B01">Kewarganegaraan</td>
+                            <td class="BS"></td>
+                            <td class="B11">
+                                <asp:RadioButtonList ID="nationality" CssClass="mandatory" runat="server" RepeatDirection="Horizontal" >
+                                    <asp:ListItem Text="WNI" Value="WNI" Selected="True"></asp:ListItem>
+                                    <asp:ListItem Text="WNA" Value="WNA"></asp:ListItem>
+                                </asp:RadioButtonList>
+                            </td>
+                        </tr>
                         <tr>
-                            <td class="B01">Nama Customer</td>
+                            <td class="B01">Nama Lengkap</td>
                             <td class="BS"></td>
                             <td class="B11"><asp:TextBox ID="cust_name" runat="server" CssClass="mandatory" Width="260px" MaxLength="100"></asp:TextBox>
                                 <input id="btnlookup" type="button" class="btn btn-xs btn-warning" style="color:#00573D" runat="server" value="Cari.." onclick="callbackpopup(PopFindExisting, PNL_FindExisting, 'n:')" />
                             </td>
                         </tr>
                         <tr>
-                            <td class="B01">Tgl Lahir/Pendirian</td>
+                            <td class="B01">Tgl Lahir / Pendirian</td>
                             <td class="BS"></td>
-                            <td class="B11"><cc1:CC_Date ID="dob" runat="server" CssClass="mandatory" ImgShown="true"></cc1:CC_Date></td>
+                            <td class="B11">
+                                <div class="input-group date" style="width:200px">
+                                    <asp:TextBox ID="dob" runat="server" CssClass="form-control input-sm mandatory"></asp:TextBox>
+                                    <span class="input-group-addon input-sm"><span class="glyphicon glyphicon-calendar"></span></span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td class="B01">Nomor KTP / Paspor / Akta</td>
                             <td class="BS"></td>
-                            <td class="B11"><asp:TextBox ID="ktp" runat="server" CssClass="mandatory" Width="180px" MaxLength="20" onpaste="if(parseInt(clipboardData.getData('Text')) != clipboardData.getData('Text')) return false;"></asp:TextBox></td>
+                            <td class="B11"><asp:TextBox ID="ktp" runat="server" CssClass="mandatory" Width="180px" MaxLength="16" onpaste="if(parseInt(clipboardData.getData('Text')) != clipboardData.getData('Text')) return false;"></asp:TextBox></td>
                         </tr>
                         <tr>
                             <td class="B01">Nomor NPWP</td>
@@ -234,6 +269,16 @@
                                 <asp:ListItem Text="Laki-laki" Value="M"></asp:ListItem>
                                 <asp:ListItem Text="Perempuan" Value="F"></asp:ListItem>
                                             </asp:RadioButtonList></td>
+                        </tr>
+                        <tr id="tr_marital" runat="server">
+                            <td class="B01">Status Pernikahan</td>
+                            <td class="BS"></td>
+                            <td class="B11">
+                                <asp:RadioButtonList ID="marital_status" CssClass="mandatory" runat="server" RepeatDirection="Horizontal" >
+                                    <asp:ListItem Text="Single" Value="single" Selected="True"></asp:ListItem>
+                                    <asp:ListItem Text="Married" Value="married"></asp:ListItem>
+                                </asp:RadioButtonList>
+                            </td>
                         </tr>
                         <tr id="tr_mother_name" runat="server">
                             <td class="B01">Nama Ibu Kandung</td>
@@ -365,13 +410,23 @@
                                     <asp:ListItem Text="Perusahaan" Value="PSH" onclick="ubahjenis_supl(this.value)"></asp:ListItem>
                                                 </asp:RadioButtonList></td>
                             </tr>
+                            <tr id="tr_supp_nationality" runat="server">
+                                <td class="B01">Kewarganegaraan</td>
+                                <td class="BS"></td>
+                                <td class="B11">
+                                    <asp:RadioButtonList ID="supp_nationality" CssClass="mandatory" runat="server" RepeatDirection="Horizontal" >
+                                        <asp:ListItem Text="WNI" Value="WNI" Selected="True"></asp:ListItem>
+                                        <asp:ListItem Text="WNA" Value="WNA"></asp:ListItem>
+                                    </asp:RadioButtonList>
+                                </td>
+                            </tr>
                             <tr>
                                 <td class="B01">Hubungan dengan Debitur</td>
                                 <td class="BS"></td>
                                 <td class="B11"><asp:DropDownList ID="status_app" runat="server" CssClass="mandatory"></asp:DropDownList></td>
                             </tr>
                             <tr>
-                                <td class="B01">Nama Customer</td>
+                                <td class="B01">Nama Lengkap</td>
                                 <td class="BS"></td>
                                 <td class="B11"><asp:TextBox ID="supp_cust_name" runat="server" CssClass="mandatory" Width="85%" MaxLength="100"></asp:TextBox>
                                     <input id="Button4" type="button" class="btn btn-xs btn-warning" style="color:#00573D" runat="server" value="..." onclick="callbackpopup(PopFindExisting, PNL_FindExisting, 'np:')" />
@@ -383,9 +438,9 @@
                                 <td class="B11"><cc1:CC_Date ID="supp_dob" runat="server" ImgShown="false" CssClass="mandatory"></cc1:CC_Date></td>
                             </tr>
                             <tr>
-                                <td class="B01">Nomor KTP / Akta</td>
+                                <td class="B01">Nomor KTP/Paspor/Akta</td>
                                 <td class="BS"></td>
-                                <td class="B11"><asp:TextBox ID="supp_ktp" runat="server" CssClass="mandatory" Width="180px" MaxLength="20" onpaste="if(parseInt(clipboardData.getData('Text')) != clipboardData.getData('Text')) return false;"></asp:TextBox></td>
+                                <td class="B11"><asp:TextBox ID="supp_ktp" runat="server" CssClass="mandatory" Width="180px" MaxLength="16" onpaste="if(parseInt(clipboardData.getData('Text')) != clipboardData.getData('Text')) return false;"></asp:TextBox></td>
                             </tr>
                             <tr>
                                 <td class="B01">Nomor NPWP</td>
@@ -548,8 +603,17 @@
 
 	<script>
 	jQuery(function($){
-		$("#mainPanel_npwp").mask("99.999.999.9-999.999");
-	});
+        $("#mainPanel_npwp").mask("99.999.999.9-999.999");
+
+        $('#mainPanel_dob').datetimepicker({
+            //language: 'fr',
+            ignoreReadonly: true,
+            format: 'DD/MM/YYYY',
+            showTodayButton: true,
+            //pickTime: false
+        });
+    });
+
 	</script>
 </body>
 </html>

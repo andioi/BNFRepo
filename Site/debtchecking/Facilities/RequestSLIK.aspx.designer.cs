@@ -94,6 +94,24 @@ namespace DebtChecking.Facilities {
         protected global::System.Web.UI.WebControls.RadioButtonList cust_type;
         
         /// <summary>
+        /// tr_nationality control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow tr_nationality;
+        
+        /// <summary>
+        /// nationality control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList nationality;
+        
+        /// <summary>
         /// cust_name control.
         /// </summary>
         /// <remarks>
@@ -118,7 +136,7 @@ namespace DebtChecking.Facilities {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DMSControls.CC_Date dob;
+        protected global::System.Web.UI.WebControls.TextBox dob;
         
         /// <summary>
         /// ktp control.
@@ -164,6 +182,24 @@ namespace DebtChecking.Facilities {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList gender;
+        
+        /// <summary>
+        /// tr_marital control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow tr_marital;
+        
+        /// <summary>
+        /// marital_status control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList marital_status;
         
         /// <summary>
         /// tr_mother_name control.
@@ -317,6 +353,24 @@ namespace DebtChecking.Facilities {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList supp_cust_type;
+        
+        /// <summary>
+        /// tr_supp_nationality control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow tr_supp_nationality;
+        
+        /// <summary>
+        /// supp_nationality control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList supp_nationality;
         
         /// <summary>
         /// status_app control.

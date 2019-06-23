@@ -129,7 +129,6 @@ namespace DebtChecking.Facilities
             staticFramework.reff(purpose, "select * FROM rfrequestpurpose", null, conn);
             staticFramework.reff(branchid, "select * FROM rfbranch", null, conn);
             staticFramework.reff(productid, "select * FROM rfproduct order by kode_idreg", null, conn);
-            staticFramework.reff(status_app, "select * FROM rfrelationbic", null, conn);
         }
 
         private void retreive_schema()
@@ -158,6 +157,7 @@ namespace DebtChecking.Facilities
             staticFramework.retrieve(dt, purpose);
             staticFramework.retrieve(dt, branchid);
             staticFramework.retrieve(dt, cust_type);
+            staticFramework.retrieve(dt, nationality);
             staticFramework.retrieve(dt, cust_name);
             staticFramework.retrieve(dt, dob);
             staticFramework.retrieve(dt, ktp);
@@ -167,21 +167,28 @@ namespace DebtChecking.Facilities
             staticFramework.retrieve(dt, homecity);
             staticFramework.retrieve(dt, phonenumber);
             staticFramework.retrieve(dt, gender);
+            staticFramework.retrieve(dt, marital_status);
             staticFramework.retrieve(dt, mother_name);
 
             if (cust_type.SelectedValue == "PSH")
             {
                 tr_gender.Style["display"] = "none";
                 tr_mother_name.Style["display"] = "none";
+                tr_nationality.Style["display"] = "none";
+                tr_marital.Style["display"] = "none";
                 npwp.CssClass = "mandatory";
                 gender.CssClass = "";
+                ktp.CssClass = "";
             }
             else
             {
                 tr_gender.Style["display"] = "";
                 tr_mother_name.Style["display"] = "";
+                tr_nationality.Style["display"] = "";
+                tr_marital.Style["display"] = "";
                 npwp.CssClass = "";
                 gender.CssClass = "mandatory";
+                ktp.CssClass = "mandatory";
             }
         }
 
@@ -191,6 +198,7 @@ namespace DebtChecking.Facilities
                 new object[] { Request.QueryString["requestid"], key }, dbtimeout);
             staticFramework.retrieve(dt, seq);
             staticFramework.retrieve(dt, supp_cust_type, "supp_");
+            staticFramework.retrieve(dt, supp_nationality, "supp_");
             staticFramework.retrieve(dt, supp_cust_name, "supp_");
             staticFramework.retrieve(dt, status_app);
             staticFramework.retrieve(dt, supp_dob, "supp_");
@@ -207,6 +215,7 @@ namespace DebtChecking.Facilities
             {
                 tr_supp_gender.Style["display"] = "none";
                 tr_supp_mother_name.Style["display"] = "none";
+                tr_supp_nationality.Style["display"] = "none";
                 supp_npwp.CssClass = "mandatory";
                 supp_gender.CssClass = "";
             }
@@ -214,6 +223,7 @@ namespace DebtChecking.Facilities
             {
                 tr_supp_gender.Style["display"] = "";
                 tr_supp_mother_name.Style["display"] = "";
+                tr_supp_nationality.Style["display"] = "";
                 supp_npwp.CssClass = "";
                 supp_gender.CssClass = "mandatory";
             }
@@ -259,6 +269,7 @@ namespace DebtChecking.Facilities
             staticFramework.saveNVC(Fields, purpose);
             staticFramework.saveNVC(Fields, branchid);
             staticFramework.saveNVC(Fields, cust_type);
+            staticFramework.saveNVC(Fields, nationality);
             staticFramework.saveNVC(Fields, cust_name);
             staticFramework.saveNVC(Fields, dob);
             staticFramework.saveNVC(Fields, ktp);
@@ -268,6 +279,7 @@ namespace DebtChecking.Facilities
             staticFramework.saveNVC(Fields, homecity);
             staticFramework.saveNVC(Fields, phonenumber);
             staticFramework.saveNVC(Fields, gender);
+            staticFramework.saveNVC(Fields, marital_status);
             staticFramework.saveNVC(Fields, mother_name);
             staticFramework.save(Fields, Keys, "apprequest", conn);
         }
@@ -287,6 +299,7 @@ namespace DebtChecking.Facilities
             staticFramework.saveNVC(Keys, requestid);
             staticFramework.saveNVC(Keys, seq);
             staticFramework.saveNVC(Fields, supp_cust_type, "supp_");
+            staticFramework.saveNVC(Fields, supp_nationality, "supp_");
             staticFramework.saveNVC(Fields, supp_cust_name, "supp_");
             staticFramework.saveNVC(Fields, status_app);
             staticFramework.saveNVC(Fields, supp_dob, "supp_");
@@ -418,7 +431,7 @@ namespace DebtChecking.Facilities
                     pob.Text = dt.Rows[0]["pob"].ToString();
                     homeaddress.Text = dt.Rows[0]["homeaddress"].ToString();
                     phonenumber.Text = dt.Rows[0]["phonenumber"].ToString();
-                    dob.Value = dt.Rows[0]["dob"].ToString();
+                    dob.Text = dt.Rows[0]["dob"].ToString();
                     try
                     {
                         gender.SelectedValue = dt.Rows[0]["gender"].ToString();
@@ -459,6 +472,8 @@ namespace DebtChecking.Facilities
 
         protected void PanelSID_Callback(object source, DevExpress.Web.CallbackEventArgsBase e)
         {
+            staticFramework.reff(status_app, "select * FROM rfrelationbic where cust_type = @1",
+                    new object[] { cust_type.SelectedValue }, conn);
             if (e.Parameter.StartsWith("r:"))
             {
                 retrieve_data_suppl(e.Parameter.Substring(2));
