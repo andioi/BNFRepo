@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7796C2CA-6B56-4C3C-B26E-94F695F0CF03}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MikroMnt</RootNamespace>
+    <AssemblyName>MikroMnt</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Charts.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.CodeParser.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Data.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.DataAccess.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.1.UI, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.DataAccess.v17.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Diagram.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Docs.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Office.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Pdf.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Drawing, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Pdf.v17.1.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.PivotGrid.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Printing.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.RichEdit.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.RichEdit.v17.1.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Snap.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Sparkline.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Spreadsheet.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Utils.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Utils.v17.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxPivotGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxTreeList.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.Bootstrap.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.Bootstrap.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.Resources.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.Resources.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Xpo.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraBars.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraCharts.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Extensions, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraCharts.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraCharts.v17.1.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraDiagram.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraEditors.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraGauges.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraLayout.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraNavBar.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraPivotGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraPrinting.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraReports.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraReports.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1.Web, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraReports.v17.1.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraRichEdit.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.1.Extensions, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraRichEdit.v17.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraTreeList.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraVerticalGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="My.Controls, Version=1.0.3832.30293, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\My.Framework\bin\Debug\My.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="My.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\My.Framework\bin\Debug\My.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="My.Tools, Version=1.0.3680.24423, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\My.Framework\bin\Debug\My.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="SandTrap.WebControls, Version=1.2.0.0, Culture=neutral" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UOBISecurity">
+      <HintPath>..\..\Engine\EncToolsRegistryNew\UOBISecurity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="authenticate.aspx" />
+    <Content Include="bin\DevExpress.Charts.v17.1.Core.dll" />
+    <Content Include="bin\DevExpress.CodeParser.v17.1.dll" />
+    <Content Include="bin\DevExpress.Data.v17.1.dll" />
+    <Content Include="bin\DevExpress.Data.v17.1.xml" />
+    <Content Include="bin\DevExpress.DataAccess.v17.1.dll" />
+    <Content Include="bin\DevExpress.DataAccess.v17.1.UI.dll" />
+    <Content Include="bin\DevExpress.DataAccess.v17.1.UI.xml" />
+    <Content Include="bin\DevExpress.DataAccess.v17.1.xml" />
+    <Content Include="bin\DevExpress.Diagram.v17.1.Core.dll" />
+    <Content Include="bin\DevExpress.Diagram.v17.1.Core.xml" />
+    <Content Include="bin\DevExpress.Docs.v17.1.dll" />
+    <Content Include="bin\DevExpress.Office.v17.1.Core.dll" />
+    <Content Include="bin\DevExpress.Office.v17.1.Core.xml" />
+    <Content Include="bin\DevExpress.Pdf.v17.1.Core.dll" />
+    <Content Include="bin\DevExpress.Pdf.v17.1.Core.xml" />
+    <Content Include="bin\DevExpress.Pdf.v17.1.Drawing.dll" />
+    <Content Include="bin\DevExpress.Pdf.v17.1.Drawing.xml" />
+    <Content Include="bin\DevExpress.PivotGrid.v17.1.Core.dll" />
+    <Content Include="bin\DevExpress.PivotGrid.v17.1.Core.xml" />
+    <Content Include="bin\DevExpress.Printing.v17.1.Core.dll" />
+    <Content Include="bin\DevExpress.Printing.v17.1.Core.xml" />
+    <Content Include="bin\DevExpress.RichEdit.v17.1.Core.dll" />
+    <Content Include="bin\DevExpress.RichEdit.v17.1.Core.xml" />
+    <Content Include="bin\DevExpress.RichEdit.v17.1.Export.dll" />
+    <Content Include="bin\DevExpress.Snap.v17.1.Core.dll" />
+    <Content Include="bin\DevExpress.Snap.v17.1.Core.xml" />
+    <Content Include="bin\DevExpress.Sparkline.v17.1.Core.dll" />
+    <Content Include="bin\DevExpress.Sparkline.v17.1.Core.xml" />
+    <Content Include="bin\DevExpress.Spreadsheet.v17.1.Core.dll" />
+    <Content Include="bin\DevExpress.Utils.v17.1.dll" />
+    <Content Include="bin\DevExpress.Utils.v17.1.UI.dll" />
+    <Content Include="bin\DevExpress.Utils.v17.1.UI.xml" />
+    <Content Include="bin\DevExpress.Utils.v17.1.xml" />
+    <Content Include="bin\DevExpress.Web.ASPxPivotGrid.v17.1.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxPivotGrid.v17.1.xml" />
+    <Content Include="bin\DevExpress.Web.ASPxTreeList.v17.1.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxTreeList.v17.1.xml" />
+    <Content Include="bin\DevExpress.Web.Bootstrap.v17.1.dll" />
+    <Content Include="bin\DevExpress.Web.Resources.v17.1.dll" />
+    <Content Include="bin\DevExpress.Web.v17.1.dll" />
+    <Content Include="bin\DevExpress.Web.v17.1.xml" />
+    <Content Include="bin\DevExpress.Xpo.v17.1.dll" />
+    <Content Include="bin\DevExpress.Xpo.v17.1.xml" />
+    <Content Include="bin\DevExpress.XtraBars.v17.1.dll" />
+    <Content Include="bin\DevExpress.XtraCharts.v17.1.dll" />
+    <Content Include="bin\DevExpress.XtraCharts.v17.1.Extensions.dll" />
+    <Content Include="bin\DevExpress.XtraCharts.v17.1.Wizard.dll" />
+    <Content Include="bin\DevExpress.XtraCharts.v17.1.Wizard.xml" />
+    <Content Include="bin\DevExpress.XtraCharts.v17.1.xml" />
+    <Content Include="bin\DevExpress.XtraDiagram.v17.1.dll" />
+    <Content Include="bin\DevExpress.XtraEditors.v17.1.dll" />
+    <Content Include="bin\DevExpress.XtraGauges.v17.1.Core.dll" />
+    <Content Include="bin\DevExpress.XtraGauges.v17.1.Core.xml" />
+    <Content Include="bin\DevExpress.XtraGrid.v17.1.dll" />
+    <Content Include="bin\DevExpress.XtraLayout.v17.1.dll" />
+    <Content Include="bin\DevExpress.XtraNavBar.v17.1.dll" />
+    <Content Include="bin\DevExpress.XtraPivotGrid.v17.1.dll" />
+    <Content Include="bin\DevExpress.XtraPivotGrid.v17.1.xml" />
+    <Content Include="bin\DevExpress.XtraPrinting.v17.1.dll" />
+    <Content Include="bin\DevExpress.XtraPrinting.v17.1.xml" />
+    <Content Include="bin\DevExpress.XtraReports.v17.1.dll" />
+    <Content Include="bin\DevExpress.XtraReports.v17.1.Extensions.dll" />
+    <Content Include="bin\DevExpress.XtraReports.v17.1.Extensions.xml" />
+    <Content Include="bin\DevExpress.XtraReports.v17.1.Web.dll" />
+    <Content Include="bin\DevExpress.XtraReports.v17.1.Web.xml" />
+    <Content Include="bin\DevExpress.XtraReports.v17.1.xml" />
+    <Content Include="bin\DevExpress.XtraRichEdit.v17.1.dll" />
+    <Content Include="bin\DevExpress.XtraRichEdit.v17.1.Extensions.dll" />
+    <Content Include="bin\DevExpress.XtraRichEdit.v17.1.xml" />
+    <Content Include="bin\DevExpress.XtraTreeList.v17.1.dll" />
+    <Content Include="bin\DevExpress.XtraVerticalGrid.v17.1.dll" />
+    <Content Include="bin\DMS.Framework.dll" />
+    <Content Include="bin\DMS.Tools.dll" />
+    <Content Include="bin\DMSControls.dll" />
+    <Content Include="bin\MikroMnt.dll" />
+    <Content Include="bin\MikroMnt.pdb" />
+    <Content Include="bin\SandTrap.WebControls.dll" />
+    <Content Include="bin\UOBISecurity.dll" />
+    <Content Include="Body.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="classes\DevExpress.Data.v8.2.dll" />
+    <Content Include="classes\DevExpress.Data.v8.2.xml" />
+    <Content Include="classes\DevExpress.Web.ASPxEditors.v8.2.dll" />
+    <Content Include="classes\DevExpress.Web.ASPxEditors.v8.2.xml" />
+    <Content Include="classes\DevExpress.Web.ASPxGridView.v8.2.dll" />
+    <Content Include="classes\DevExpress.Web.ASPxGridView.v8.2.Export.dll" />
+    <Content Include="classes\DevExpress.Web.ASPxGridView.v8.2.Export.xml" />
+    <Content Include="classes\DevExpress.Web.v8.2.dll" />
+    <Content Include="classes\DevExpress.Web.v8.2.xml" />
+    <Content Include="classes\DMS.Framework.dll" />
+    <Content Include="classes\DMS.Tools.dll" />
+    <Content Include="classes\DMSControls.dll" />
+    <Content Include="classes\DTPicker.dll" />
+    <Content Include="classes\ReportViewer.dll" />
+    <Content Include="classes\SandTrap.WebControls.dll" />
+    <Content Include="CommonForm\RefCh.aspx" />
+    <Content Include="CommonForm\RefSearch.aspx" />
+    <Content Include="CommonForm\UC_Date.ascx" />
+    <Content Include="CommonForm\UC_RefList.ascx" />
+    <Content Include="Footer.aspx" />
+    <Content Include="Header.aspx" />
+    <Content Include="image\back.jpg" />
+    <Content Include="image\Complete.GIF" />
+    <Content Include="image\header01.jpg" />
+    <Content Include="image\header02.jpg" />
+    <Content Include="image\header03.jpg" />
+    <Content Include="image\ic_datetime.gif" />
+    <Content Include="image\log02.jpg" />
+    <Content Include="image\logout.jpg" />
+    <Content Include="image\losnet.jpg" />
+    <Content Include="image\MainMenu.JPG" />
+    <Content Include="image\menu\arrow.gif" />
+    <Content Include="image\menu\arrow_over.gif" />
+    <Content Include="image\menu\arrow_white.gif" />
+    <Content Include="image\menu\break.gif" />
+    <Content Include="image\menu\bullet.gif" />
+    <Content Include="image\menu\bullet_over.gif" />
+    <Content Include="image\ucdt.gif" />
+    <Content Include="image\UnComplete.gif" />
+    <Content Include="include\calc.js" />
+    <Content Include="include\cek_entries.html" />
+    <Content Include="include\cek_entries.js" />
+    <Content Include="include\cek_mandatoryOnly.html" />
+    <Content Include="include\date_picker.css" />
+    <Content Include="include\date_picker.js" />
+    <Content Include="include\generator.css" />
+    <Content Include="include\menuStyle.css" />
+    <Content Include="include\onepost.html" />
+    <Content Include="include\reflist.js" />
+    <Content Include="include\style.css" />
+    <Content Include="include\uc\UC_Currency.html" />
+    <Content Include="include\uc\UC_Date.html" />
+    <Content Include="include\uc\UC_Decimal.html" />
+    <Content Include="include\uc\UC_Number.html" />
+    <Content Include="include\UC_Currency.js" />
+    <Content Include="include\UC_TXT_DECIMAL.js" />
+    <Content Include="Logout.aspx" />
+    <Content Include="main.html" />
+    <Content Include="parameter\DecisionSystemMaker.aspx" />
+    <Content Include="parameter\ParamApprv.aspx" />
+    <Content Include="parameter\ParamMaker.aspx" />
+    <Content Include="parameter\ParamMakerEditOnly.aspx" />
+    <Content Include="parameter\ParamSet.aspx" />
+    <Content Include="parameter\UploadTemplate.aspx" />
+    <Content Include="parameter\USC_paraminput.ascx" />
+    <Content Include="unittest.aspx" />
+    <Content Include="user\GroupApproval.aspx" />
+    <Content Include="user\GroupMaintenance.aspx" />
+    <Content Include="user\GroupMenuAccess.aspx" />
+    <Content Include="user\ModuleUser\GroupMnt.aspx" />
+    <Content Include="user\ModuleUser\GroupMikro.aspx" />
+    <Content Include="user\ModuleUser\UserMikro.aspx" />
+    <Content Include="user\UserApproval.aspx" />
+    <Content Include="user\UserMaintenance.aspx" />
+    <Content Include="warning.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="authenticate.aspx.cs">
+      <DependentUpon>authenticate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="authenticate.aspx.designer.cs">
+      <DependentUpon>authenticate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Body.aspx.cs">
+      <DependentUpon>Body.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Body.aspx.designer.cs">
+      <DependentUpon>Body.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clsMNTTools.cs" />
+    <Compile Include="CommonForm\RefCh.aspx.cs">
+      <DependentUpon>RefCh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\RefCh.aspx.designer.cs">
+      <DependentUpon>RefCh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\RefSearch.aspx.cs">
+      <DependentUpon>RefSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\RefSearch.aspx.designer.cs">
+      <DependentUpon>RefSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_Date.ascx.cs">
+      <DependentUpon>UC_Date.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_Date.ascx.designer.cs">
+      <DependentUpon>UC_Date.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonForm\UC_RefList.ascx.cs">
+      <DependentUpon>UC_RefList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonForm\UC_RefList.ascx.designer.cs">
+      <DependentUpon>UC_RefList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.aspx.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footer.aspx.designer.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parameter\DecisionSystemMaker.aspx.cs">
+      <DependentUpon>DecisionSystemMaker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="parameter\DecisionSystemMaker.aspx.designer.cs">
+      <DependentUpon>DecisionSystemMaker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parameter\ParamApprv.aspx.cs">
+      <DependentUpon>ParamApprv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="parameter\ParamApprv.aspx.designer.cs">
+      <DependentUpon>ParamApprv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parameter\ParamMaker.aspx.cs">
+      <DependentUpon>ParamMaker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="parameter\ParamMaker.aspx.designer.cs">
+      <DependentUpon>ParamMaker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parameter\ParamMakerEditOnly.aspx.cs">
+      <DependentUpon>ParamMakerEditOnly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="parameter\ParamMakerEditOnly.aspx.designer.cs">
+      <DependentUpon>ParamMakerEditOnly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parameter\ParamSet.aspx.cs">
+      <DependentUpon>ParamSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="parameter\ParamSet.aspx.designer.cs">
+      <DependentUpon>ParamSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parameter\UploadTemplate.aspx.cs">
+      <DependentUpon>UploadTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="parameter\UploadTemplate.aspx.designer.cs">
+      <DependentUpon>UploadTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parameter\USC_paraminput.ascx.cs">
+      <DependentUpon>USC_paraminput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="parameter\USC_paraminput.ascx.designer.cs">
+      <DependentUpon>USC_paraminput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleEncryption.cs" />
+    <Compile Include="unittest.aspx.cs">
+      <DependentUpon>unittest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="unittest.aspx.designer.cs">
+      <DependentUpon>unittest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\GroupApproval.aspx.cs">
+      <DependentUpon>GroupApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\GroupApproval.aspx.designer.cs">
+      <DependentUpon>GroupApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\GroupMaintenance.aspx.cs">
+      <DependentUpon>GroupMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\GroupMaintenance.aspx.designer.cs">
+      <DependentUpon>GroupMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\GroupMenuAccess.aspx.cs">
+      <DependentUpon>GroupMenuAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\GroupMenuAccess.aspx.designer.cs">
+      <DependentUpon>GroupMenuAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\ModuleUser\GroupMnt.aspx.cs">
+      <DependentUpon>GroupMnt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\ModuleUser\GroupMnt.aspx.designer.cs">
+      <DependentUpon>GroupMnt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\ModuleUser\GroupMikro.aspx.cs">
+      <DependentUpon>GroupMikro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\ModuleUser\GroupMikro.aspx.designer.cs">
+      <DependentUpon>GroupMikro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\ModuleUser\UserMikro.aspx.cs">
+      <DependentUpon>UserMikro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\ModuleUser\UserMikro.aspx.designer.cs">
+      <DependentUpon>UserMikro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\UserApproval.aspx.cs">
+      <DependentUpon>UserApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\UserApproval.aspx.designer.cs">
+      <DependentUpon>UserApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\UserMaintenance.aspx.cs">
+      <DependentUpon>UserMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\UserMaintenance.aspx.designer.cs">
+      <DependentUpon>UserMaintenance.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\MikroMnt.dll.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2475</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/cbasbtpnmnt</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

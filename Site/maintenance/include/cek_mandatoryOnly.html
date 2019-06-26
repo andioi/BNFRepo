@@ -1,0 +1,29 @@
+<script language="javascript">
+function cek_mandatory(frm, alamat)
+{
+	max_elm = (frm.elements.length) - 2;
+	lanjut = true;
+	for (var i=1; i<=max_elm; i++)
+	{
+		elm = frm.elements[i];
+		nm_kolom = "kotak";
+		if (elm.className == "mandatory" && (elm.value == "" || elm.value == "0,00") && (elm.type == "text" || elm.type == "select-one"))
+		{
+			r = elm.parentElement.parentElement;
+			d = r.cells(0).innerText;
+			alert(d + " tidak boleh kosong...");
+			lanjut = false;
+			elm.focus();
+			return false;
+		}
+	}
+	if (lanjut)
+	{
+
+		if (alamat != undefined && alamat != "" )
+			frm.action = alamat;
+
+		return true;
+	}
+}
+</script>

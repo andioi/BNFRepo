@@ -1,0 +1,419 @@
+INPUT
+{FONT-SIZE: 11px;COLOR: black;FONT-FAMILY: verdana;}
+
+TEXTAREA
+{FONT-SIZE: 11px;FONT-FAMILY: verdana;}
+
+TABLE
+{
+	border-right: black 0px solid;
+	border-top: black 0px solid;
+	font-size: 11px;
+	border-left: black 0px solid;
+	border-bottom: black 0px solid;
+	font-family: Tahoma, verdana,  Arial;
+}
+
+BODY
+{
+	margin-top: 0px;
+	font-size: 11px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-family: Tahoma, verdana, Arial;
+}
+
+A:link {color: blue;}A:visited {color: blue;}A:hover {color: blue;}
+
+SELECT
+{FONT-SIZE: 11px;FONT-FAMILY: verdana;}
+
+TD
+{HEIGHT: 21px;}
+
+IMG
+{border:0px solid black;}
+
+LEGEND
+{background-color:white;text-align:left;color:black;
+font-weight:bold;font-size:11px;HEIGHT:20px}
+
+.mandatory
+{background-color:#DCFCA9;}
+
+.mandatory td
+{background-color:#DCFCA9;}
+
+
+.mandatory2
+{background-color:#DCFCA9;}
+
+.td
+{border:1px solid black;}
+
+.Dg1
+{
+	font-family: arial;
+	font-size: small;
+	border: solid 1px #7f7f7f;
+	background-color: #ffffff;
+}
+
+.T1
+{
+	background-color:#DCDCDC;
+	color:black;
+	border:2px groove #FFFFFF;
+	text-align:center; 
+}
+
+.S1
+{
+	border-style:solid;
+    border-width:1px;
+    border-color:Gray;
+    background-color:white;
+}
+
+.Box1
+{
+	background-color: white;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #005263 #C0C0C0 #C0C0C0 #005263;
+}
+
+.Alt1
+{
+	BACKGROUND-COLOR: #EFF3FF;
+}
+
+.Alt2
+{
+	BACKGROUND-COLOR: #DFF3FF;
+}
+
+.Bg1
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:#084e94;
+	color:black;
+}
+
+.Bt1
+{
+	border:1px outset #FFFFFF;
+	background-image: url('mVItemHBack.gif');	
+    background-repeat:repeat-x;	
+    background-position:top;
+	text-align:center; 
+	text-decoration: none;
+	color:black;
+	font-weight:bold;
+	font-size:11px;
+	width: 110px;
+	height:23px;
+}
+
+.Tbl0
+{
+	width:100%;
+    border-style:hidden;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+	border-spacing:0px;
+}
+
+.H0
+{ 
+	border:0px solid black;
+	color:#fffff0; 
+	font-weight:bold 
+}
+
+.H1
+{
+	border-right: gray 1px solid;
+	border-top: gray 1px solid;
+	border-left: gray 1px solid;
+	border-bottom: gray 1px solid;
+	
+	
+	background-image: url('mItemBack.gif');	
+    background-repeat:repeat-x;	
+    background-position:top;				
+    
+	text-align:center; 
+	color:black; 
+	font-weight:bold;
+	font-size:12px;
+	font-family: Tahoma, Arial, Verdana;
+	height: 20px;
+	text-align: center;
+	text-transform:uppercase;
+}
+
+.H2
+{
+    border-style:solid;
+	border-width:1px;
+	border-color:Gray;
+	background-color:#FBD688; 
+	text-align:center; 
+	vertical-align:middle;
+	color:#18386B; 
+	font-weight:bold;
+	font-size:10px;
+	HEIGHT:18px
+}
+
+.H3
+{
+	background-color:#ffcc66;
+	color:black;
+}
+
+.H4
+{
+	border-bottom: black 1px outset;
+	border-left: black 1px outset;
+	border-right: black 1px outset;
+	background-color : White;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.H5
+{
+	background-color:#339933;
+	text-align:center;
+	vertical-align:middle;
+	color:Black;
+	font-weight:bold;
+	font-size:10px;
+	HEIGHT:20px
+}
+
+.HRpt
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:Gray;
+	background-color:#084e94;
+	text-align:center;
+	vertical-align:middle;
+	color:White;
+	font-weight:bold;
+	font-size:10px;
+	HEIGHT:20px
+}
+
+.Box1
+{
+	background-color:white;
+	border-style:solid;
+	border-width:1px;
+	border-color:#084e94;
+}
+
+.B00
+{
+	border-color:white;
+	background-color:white;	
+	color:black;
+	text-align:center; 
+	vertical-align:middle;
+	white-space:nowrap;
+}
+
+.B01
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:white;				
+	color:black;
+	text-align:right; 
+	width:150px;
+}
+
+.B02
+{
+	border:4px outset #FFFFFF;
+	background-color:#e5ebf4;
+	text-align:center;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:10px;
+	HEIGHT:26px
+}
+
+.BS
+{
+	background-color:white;
+	border-color:white;
+	color:black;
+	vertical-align:middle;
+	width:1px;
+}
+
+.B11
+{
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#e5ebf4;
+	color:black;
+	text-align:left;
+}
+
+
+.F1
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:#b3e2da;
+	color:black;
+	text-align:center; 
+	height:27px;
+}
+
+.dxeCalendar
+{ 
+    border: solid 1px #9f9f9f;
+    background-color: White;
+    color: Black;
+    font-weight: normal;
+    cursor: default;
+}
+.dxeCalendar td.dxMonthGrid 
+{
+    padding: 4px 10px;    
+}
+.dxeCalendar td.dxMonthGridWithWeekNumbers
+{
+    padding: 3px 10px 4px 4px;    
+}
+.dxeCalendarDayHeader
+{
+    font-family: Tahoma;
+    font-size: 8pt;        
+    padding: 1px 2px 3px;
+    border-bottom: solid 1px #cfcfcf;
+}
+.dxeCalendarWeekNumber
+{    
+    font-family: Tahoma;
+    font-size: 7pt;    
+    text-align: right;    
+    padding: 3px 4px 3px 2px;        
+    color: #bfbfbf;
+}
+.dxeCalendarDay
+{    
+    font-family: Tahoma;
+    font-size: 8pt;
+    padding: 2px 3px;
+    text-align: center;    
+}
+.dxeCalendarWeekend        /* inherits dxeCalendarDay */
+{
+    color: #c00000;
+}
+.dxeCalendarOtherMonth     /* inherits dxeCalendarDay */
+{
+    color: #888;
+}
+.dxeCalendarOutOfRange     /* inherits dxeCalendarDay */
+{
+    color: #d0d0d0;    
+}
+.dxeCalendarSelected       /* inherits dxeCalendarDay */
+{
+    color: White;
+    background-color: #8d8d8d;
+}
+.dxeCalendarToday         /* inherits dxeCalendarDay */
+{
+    padding: 1px 1px 1px;
+    border: solid 1px #c00000;    
+}
+.dxeCalendarHeader
+{
+    background-color: #dcdcdc;
+    border: solid 1px #c9c9c9;    
+    border-width: 1px 0;
+    padding: 2px 3px;
+}
+.dxeCalendarHeader td.dxe
+{
+    font-family: Tahoma;
+    font-size: 8pt;
+    text-align: center;
+	cursor: pointer;
+	cursor: hand;
+}
+.dxeCalendarFooter 
+{
+    background-color: #ededed;
+    padding: 4px 0px;    
+    border-top: solid 1px #d6d6d6;
+}
+.dxeCalendarFastNav
+{
+    color: Black;
+    background: White;
+    border: solid 1px #9f9f9f;
+    border-bottom: 0px;
+    padding: 6px 4px;
+}
+.dxeCalendarFastNavMonthArea
+{
+    padding: 0px 4px;
+}
+.dxeCalendarFastNavYearArea
+{    
+}
+.dxeCalendarFastNavFooter
+{
+    color: Black;
+    background-color: #ededed;
+    padding: 4px 0px;   
+    border: solid 1px #9f9f9f;
+    border-top: solid 1px #d6d6d6;
+}
+.dxeCalendarFastNavMonth, .dxeCalendarFastNavYear
+{
+    font: normal 8pt Tahoma;
+    color: Black;
+    padding: 2px 3px;
+    text-align: center;
+	cursor: pointer;
+	cursor: hand;
+}
+.dxeCalendarFastNavMonth
+{
+	padding: 3px;
+}
+.dxeCalendarFastNavMonthSelected, .dxeCalendarFastNavYearSelected
+{
+    color: White;
+    background: #8d8d8d;    
+}
+.dxeCalendarFastNavMonthHover, .dxeCalendarFastNavYearHover
+{        
+    color: Black;
+    background: #e5e5e5;
+    padding: 1px 2px;
+    border: solid 1px #d6d6d6;
+}
+.dxeCalendarFastNavMonthHover
+{
+	padding: 3px;
+}
+

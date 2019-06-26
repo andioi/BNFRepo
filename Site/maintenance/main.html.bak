@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Main Page</title>
+		<script language="JavaScript" type="text/javascript">
+
+			if (top != self) { top.location = self.location; }
+
+		var warn_window = null;
+		var can_close = true;
+		var appurl = '';
+		function warn_close(nochk)
+		{
+			if (!nochk && !can_close)	return;
+			if (warn_window!=null)
+			try {
+				warn_window.opener = null;
+				warn_window.close();
+				warn_window = null;
+			} catch (e) { }
+		}
+		function warn_timeout()
+		{
+		    if (warn_window!=null) return;
+		    var X = (screen.availWidth-380)/2;
+		    var Y = (screen.availHeight-350)/2;
+
+		    try { app_url = document.frames(1).document.location.href; }
+		    catch (e) { }
+		    can_close = false;
+		    window.focus();
+		    warn_window = window.open("warning.html","losmnt",
+		    "height=350px,width=380px,left="+X+",top="+Y+
+		    ",status=no,toolbar=no,scrollbars=no,titlebar=no,menubar=no,location=no,dependent=yes");
+		}
+		function warn_closed()
+		{
+			warn_window = null;
+			try {
+				if (document.frames(2).document.readyState=='interactive' || document.frames(2).document.readyState=='complete')
+				document.frames(2).document.parentWindow.execScript('reset_post()');
+			} catch (e) { }
+		}
+		function logout_now()
+		{
+			warn_close(true);
+			top.location.href = 'Logout.aspx';
+		}
+		</script>
+		<script for="document" event="onmouseover" type="text/javascript">
+			try {
+			if (!can_close && app_url!=document.frames(1).document.location.href)
+				can_close = true;
+			warn_close(false);
+			if (warn_window==null && (document.frames(2).document.readyState=='interactive' || document.frames(2).document.readyState=='complete'))
+			document.frames(2).document.parentWindow.execScript('reset_post()');
+			} catch (e) { }
+		</script>
+		<script for="window" event="onunload" type="text/javascript">
+			warn_close(true);
+		</script>
+</head>
+	<!-- <frameset rows="32,*,18">  -->
+	<frameset rows="*,18"> 
+		<!-- <frame name="header" src="Header.asp" scrolling="no" noresize frameborder="0"> -->
+		<frame name="main" src="Body.aspx" frameborder="0">
+		<frame name="bawah" src="Footer.aspx" noresize="noresize" scrolling="no">
+	</frameset>
+</html>

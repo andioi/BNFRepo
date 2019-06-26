@@ -1,0 +1,134 @@
+INPUT 
+{ 
+	border-style:solid;
+	border-width:1px;
+	border-color:#ff6600;
+	FONT-SIZE: 9px;
+	COLOR: black; 
+	FONT-FAMILY: verdana;
+}
+
+TEXTAREA
+{
+	FONT-SIZE: 9px;
+	FONT-FAMILY: verdana;
+}
+	
+TABLE 
+{ 
+	FONT-SIZE: 9px; 
+	FONT-FAMILY: verdana; 
+	border:0px solid black;
+}
+	
+BODY 
+{ 
+	MARGIN-TOP: 0px; 
+	MARGIN-LEFT: 0px;
+	MARGIN-RIGHT: 0px;
+	FONT-SIZE: 9px; 
+	FONT-FAMILY: verdana; 
+}
+
+A:link {color: blue;}
+A:visited {color: blue;}
+A:hover {color: blue;}
+
+SELECT 
+{ 	
+	border-style:solid;
+	border-width:10px;
+	border-color:#ff6600;
+	FONT-SIZE: 9px; 
+	FONT-FAMILY: verdana; 
+}
+
+.TableCellDescription
+{
+	border-style :ridge;
+	border-width :thin; 
+	background-color:#B5C7E7; 
+	color : #18386B;
+	vertical-align:top;
+}
+
+.TableCellSeperator
+{
+	vertical-align:top;
+}
+
+.TableCellControl
+{
+	width:100%;
+}
+
+.NonMandatory
+{
+}
+
+.Mandatory
+{
+	background-color:#ffff55;
+}
+
+IMG
+{ 
+	border:0px solid black;
+}
+
+.TblAlternatingSmaller
+{
+	BACKGROUND-COLOR: #fffab0;
+}
+
+.tdItemStyleSmaller
+{
+}
+
+.tdHeaderStyleSmaller
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:Gray;
+	background-color:#ff6600;
+	text-align:center;
+	color:White;
+	font-weight:bold;
+	font-size:10px;
+	HEIGHT:20px
+}
+
+.tdHeader
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:Gray;
+	background-color:#ff6600;
+	text-align:center;
+	color:White;
+	font-weight:bold;
+	font-size:10px;
+	HEIGHT:20px
+}
+
+.Button1
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:#ff6600;
+	background-color:#D4D0C8;
+	text-align:center; 
+	text-decoration: none;
+	font-size:10px;
+	HEIGHT:20px
+}
+
+LEGEND
+{
+	background-color:white; 
+	text-align:left;
+	color:black; 
+	font-weight:bold;
+	font-size:9px;
+	HEIGHT:18px
+}

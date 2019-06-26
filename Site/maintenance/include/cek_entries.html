@@ -1,0 +1,17 @@
+<script src="../include/cek_entries.js" language="javascript"></script>
+
+<script language=javascript>
+// include this script to prevent form being submitted twice
+// (i.e when user click the button twice)
+// form must be named Form1 in the aspx page for this to work
+var processing = false;
+</script>
+<script for=Form1 event=onsubmit language=javascript>
+	if (processing) 
+	{
+		alert ('Please wait...');
+		return false;
+	}
+	processing = true;
+	return true;
+</script>

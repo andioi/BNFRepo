@@ -1,0 +1,176 @@
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\MikroMnt.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\MikroMnt.pdb
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\DevExpress.Data.v8.2.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\DevExpress.Web.ASPxEditors.v8.2.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\DevExpress.Web.ASPxGridView.v8.2.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\DevExpress.Web.ASPxGridView.v8.2.Export.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\DevExpress.Web.v8.2.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\SandTrap.WebControls.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\DevExpress.Web.ASPxEditors.v8.2.xml
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\DevExpress.Web.ASPxGridView.v8.2.Export.xml
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\DevExpress.Data.v8.2.xml
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\DevExpress.Web.v8.2.xml
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\obj\Debug\MikroMnt.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\obj\Debug\MikroMnt.pdb
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\DMS.Framework.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\office.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\Microsoft.Vbe.Interop.dll
+D:\Project\MANDIRI\Mikroweb\alpha\site\MikroMnt\bin\Microsoft.Office.Interop.Excel.dll
+D:\projects\sahabat\Mikro\Site\maintenance\bin\MikroMnt.dll
+D:\projects\sahabat\Mikro\Site\maintenance\bin\MikroMnt.pdb
+D:\projects\sahabat\Mikro\Site\maintenance\bin\DMS.Framework.dll
+D:\projects\sahabat\Mikro\Site\maintenance\bin\SandTrap.WebControls.dll
+D:\projects\sahabat\Mikro\Site\maintenance\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\sahabat\Mikro\Site\maintenance\obj\Debug\MikroMnt.dll
+D:\projects\sahabat\Mikro\Site\maintenance\obj\Debug\MikroMnt.pdb
+D:\projects\Permata\Site\maintenance\bin\MikroMnt.dll
+D:\projects\Permata\Site\maintenance\bin\MikroMnt.pdb
+D:\projects\Permata\Site\maintenance\bin\DMS.Framework.dll
+D:\projects\Permata\Site\maintenance\bin\SandTrap.WebControls.dll
+D:\projects\Permata\Site\maintenance\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\Permata\Site\maintenance\obj\Debug\MikroMnt.dll
+D:\projects\Permata\Site\maintenance\obj\Debug\MikroMnt.pdb
+D:\Project\Permata\Site\maintenance\bin\MikroMnt.dll
+D:\Project\Permata\Site\maintenance\bin\MikroMnt.pdb
+D:\Project\Permata\Site\maintenance\bin\DMS.Framework.dll
+D:\Project\Permata\Site\maintenance\bin\SandTrap.WebControls.dll
+D:\Project\Permata\Site\maintenance\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Permata\Site\maintenance\obj\Debug\MikroMnt.dll
+D:\Project\Permata\Site\maintenance\obj\Debug\MikroMnt.pdb
+D:\Project\NISP\Site\maintenance\bin\MikroMnt.dll
+D:\Project\NISP\Site\maintenance\bin\MikroMnt.pdb
+D:\Project\NISP\Site\maintenance\bin\DMS.Framework.dll
+D:\Project\NISP\Site\maintenance\bin\SandTrap.WebControls.dll
+D:\Project\NISP\Site\maintenance\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\NISP\Site\maintenance\obj\Debug\MikroMnt.dll
+D:\Project\NISP\Site\maintenance\obj\Debug\MikroMnt.pdb
+E:\PRIVATES\Projects\NISP\Site\maintenance\bin\MikroMnt.dll
+E:\PRIVATES\Projects\NISP\Site\maintenance\bin\MikroMnt.pdb
+E:\PRIVATES\Projects\NISP\Site\maintenance\bin\DMS.Framework.dll
+E:\PRIVATES\Projects\NISP\Site\maintenance\bin\SandTrap.WebControls.dll
+E:\PRIVATES\Projects\NISP\Site\maintenance\obj\Debug\MikroMnt.csprojResolveAssemblyReference.cache
+E:\PRIVATES\Projects\NISP\Site\maintenance\obj\Debug\MikroMnt.dll
+E:\PRIVATES\Projects\NISP\Site\maintenance\obj\Debug\MikroMnt.pdb
+D:\PRIVATES\Projects\NISP\Site\maintenance\obj\Debug\MikroMnt.csprojResolveAssemblyReference.cache
+D:\PRIVATES\Projects\NISP\Site\maintenance\obj\Debug\MikroMnt.dll
+D:\PRIVATES\Projects\NISP\Site\maintenance\bin\MikroMnt.dll
+D:\PRIVATES\Projects\NISP\Site\maintenance\bin\MikroMnt.pdb
+D:\PRIVATES\Projects\NISP\Site\maintenance\bin\DMS.Framework.dll
+D:\PRIVATES\Projects\NISP\Site\maintenance\bin\SandTrap.WebControls.dll
+D:\PRIVATES\Projects\NISP\Site\maintenance\obj\Debug\MikroMnt.pdb
+D:\PRIVATES\Projects\CSUL\Site\maintenance\bin\MikroMnt.dll
+D:\PRIVATES\Projects\CSUL\Site\maintenance\bin\MikroMnt.pdb
+D:\PRIVATES\Projects\CSUL\Site\maintenance\bin\DMS.Framework.dll
+D:\PRIVATES\Projects\CSUL\Site\maintenance\bin\SandTrap.WebControls.dll
+D:\PRIVATES\Projects\CSUL\Site\maintenance\obj\Debug\MikroMnt.csprojResolveAssemblyReference.cache
+D:\PRIVATES\Projects\CSUL\Site\maintenance\obj\Debug\MikroMnt.dll
+D:\PRIVATES\Projects\CSUL\Site\maintenance\obj\Debug\MikroMnt.pdb
+D:\PRIVATES\Projects\UOB\Site\maintenance\obj\Debug\MikroMnt.csprojResolveAssemblyReference.cache
+D:\PRIVATES\Projects\UOB\Site\maintenance\obj\Debug\MikroMnt.dll
+D:\PRIVATES\Projects\UOB\Site\maintenance\obj\Debug\MikroMnt.pdb
+D:\PRIVATES\Projects\UOB\Site\maintenance\bin\MikroMnt.dll
+D:\PRIVATES\Projects\UOB\Site\maintenance\bin\MikroMnt.pdb
+D:\PRIVATES\Projects\UOB\Site\maintenance\bin\DMS.Framework.dll
+D:\PRIVATES\Projects\UOB\Site\maintenance\bin\SandTrap.WebControls.dll
+D:\PRIVATES\Projects\UOB\Site\maintenance\bin\UOBISecurity.dll
+C:\Projects\SLIK UOB\Site\maintenance\bin\MikroMnt.dll.config
+C:\Projects\SLIK UOB\Site\maintenance\bin\MikroMnt.dll
+C:\Projects\SLIK UOB\Site\maintenance\bin\MikroMnt.pdb
+C:\Projects\SLIK UOB\Site\maintenance\bin\DevExpress.Data.v8.2.dll
+C:\Projects\SLIK UOB\Site\maintenance\bin\DevExpress.Web.ASPxEditors.v8.2.dll
+C:\Projects\SLIK UOB\Site\maintenance\bin\DevExpress.Web.ASPxGridView.v8.2.dll
+C:\Projects\SLIK UOB\Site\maintenance\bin\DevExpress.Web.ASPxGridView.v8.2.Export.dll
+C:\Projects\SLIK UOB\Site\maintenance\bin\DevExpress.Web.v8.2.dll
+C:\Projects\SLIK UOB\Site\maintenance\bin\DMS.Framework.dll
+C:\Projects\SLIK UOB\Site\maintenance\bin\SandTrap.WebControls.dll
+C:\Projects\SLIK UOB\Site\maintenance\bin\EnvDTE.dll
+C:\Projects\SLIK UOB\Site\maintenance\bin\stdole.dll
+C:\Projects\SLIK UOB\Site\maintenance\bin\DevExpress.Data.v8.2.xml
+C:\Projects\SLIK UOB\Site\maintenance\bin\DevExpress.Web.ASPxEditors.v8.2.xml
+C:\Projects\SLIK UOB\Site\maintenance\bin\DevExpress.Web.ASPxGridView.v8.2.Export.xml
+C:\Projects\SLIK UOB\Site\maintenance\bin\DevExpress.Web.v8.2.xml
+C:\Projects\SLIK UOB\Site\maintenance\bin\EnvDTE.xml
+C:\Projects\SLIK UOB\Site\maintenance\obj\Debug\MikroMnt.csprojResolveAssemblyReference.cache
+C:\Projects\SLIK UOB\Site\maintenance\obj\Debug\MikroMnt.dll
+C:\Projects\SLIK UOB\Site\maintenance\obj\Debug\MikroMnt.pdb
+C:\Projects\Citibank\Site\maintenance\bin\MikroMnt.dll.config
+C:\Projects\Citibank\Site\maintenance\bin\MikroMnt.dll
+C:\Projects\Citibank\Site\maintenance\bin\MikroMnt.pdb
+C:\Projects\Citibank\Site\maintenance\bin\DevExpress.Data.v8.2.dll
+C:\Projects\Citibank\Site\maintenance\bin\DevExpress.Web.ASPxEditors.v8.2.dll
+C:\Projects\Citibank\Site\maintenance\bin\DevExpress.Web.ASPxGridView.v8.2.dll
+C:\Projects\Citibank\Site\maintenance\bin\DevExpress.Web.ASPxGridView.v8.2.Export.dll
+C:\Projects\Citibank\Site\maintenance\bin\DevExpress.Web.v8.2.dll
+C:\Projects\Citibank\Site\maintenance\bin\DMS.Framework.dll
+C:\Projects\Citibank\Site\maintenance\bin\SandTrap.WebControls.dll
+C:\Projects\Citibank\Site\maintenance\bin\EnvDTE.dll
+C:\Projects\Citibank\Site\maintenance\bin\stdole.dll
+C:\Projects\Citibank\Site\maintenance\bin\DevExpress.Data.v8.2.xml
+C:\Projects\Citibank\Site\maintenance\bin\DevExpress.Web.ASPxEditors.v8.2.xml
+C:\Projects\Citibank\Site\maintenance\bin\DevExpress.Web.ASPxGridView.v8.2.Export.xml
+C:\Projects\Citibank\Site\maintenance\bin\DevExpress.Web.v8.2.xml
+C:\Projects\Citibank\Site\maintenance\bin\EnvDTE.xml
+C:\Projects\Citibank\Site\maintenance\obj\Debug\MikroMnt.csprojResolveAssemblyReference.cache
+C:\Projects\Citibank\Site\maintenance\obj\Debug\MikroMnt.dll
+C:\Projects\Citibank\Site\maintenance\obj\Debug\MikroMnt.pdb
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\MikroMnt.dll
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\MikroMnt.pdb
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\DevExpress.Data.v8.2.dll
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\DevExpress.Web.ASPxEditors.v8.2.dll
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\DevExpress.Web.ASPxGridView.v8.2.dll
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\DevExpress.Web.ASPxGridView.v8.2.Export.dll
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\DevExpress.Web.v8.2.dll
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\DMS.Framework.dll
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\SandTrap.WebControls.dll
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\DevExpress.Data.v8.2.xml
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\DevExpress.Web.ASPxEditors.v8.2.xml
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\DevExpress.Web.ASPxGridView.v8.2.Export.xml
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\bin\DevExpress.Web.v8.2.xml
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\obj\Debug\MikroMnt.dll
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\obj\Debug\MikroMnt.pdb
+D:\Data\1. PROJECT\CBAS SLIK\New folder\CBAS SLIK\Site\maintenance\obj\Debug\MikroMnt.csprojResolveAssemblyReference.cache
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\MikroMnt.dll.config
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\MikroMnt.dll
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\MikroMnt.pdb
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\DevExpress.Data.v8.2.dll
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\DevExpress.Web.ASPxEditors.v8.2.dll
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\DevExpress.Web.ASPxGridView.v8.2.dll
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\DevExpress.Web.ASPxGridView.v8.2.Export.dll
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\DevExpress.Web.v8.2.dll
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\DMS.Framework.dll
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\SandTrap.WebControls.dll
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\EnvDTE.dll
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\stdole.dll
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\DevExpress.Data.v8.2.xml
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\DevExpress.Web.ASPxEditors.v8.2.xml
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\DevExpress.Web.ASPxGridView.v8.2.Export.xml
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\DevExpress.Web.v8.2.xml
+C:\Projects\CSUL\SLIK\Site\maintenance\bin\EnvDTE.xml
+C:\Projects\CSUL\SLIK\Site\maintenance\obj\Debug\MikroMnt.csprojResolveAssemblyReference.cache
+C:\Projects\CSUL\SLIK\Site\maintenance\obj\Debug\MikroMnt.dll
+C:\Projects\CSUL\SLIK\Site\maintenance\obj\Debug\MikroMnt.pdb
+C:\Projects\BTPN\Site\maintenance\bin\MikroMnt.dll.config
+C:\Projects\BTPN\Site\maintenance\bin\MikroMnt.dll
+C:\Projects\BTPN\Site\maintenance\bin\MikroMnt.pdb
+C:\Projects\BTPN\Site\maintenance\obj\Debug\MikroMnt.dll
+C:\Projects\BTPN\Site\maintenance\obj\Debug\MikroMnt.pdb
+C:\Projects\BTPN\Site\maintenance\bin\My.Controls.dll
+C:\Projects\BTPN\Site\maintenance\bin\My.Framework.dll
+C:\Projects\BTPN\Site\maintenance\bin\My.Tools.dll
+C:\Projects\BTPN\Site\maintenance\bin\My.Framework.pdb
+C:\Projects\BTPN\Site\maintenance\obj\Debug\MikroMnt.csprojResolveAssemblyReference.cache
+C:\Projects\HFI\Site\maintenance\bin\MikroMnt.dll.config
+C:\Projects\HFI\Site\maintenance\bin\MikroMnt.dll
+C:\Projects\HFI\Site\maintenance\bin\MikroMnt.pdb
+C:\Projects\HFI\Site\maintenance\bin\My.Framework.pdb
+C:\Projects\HFI\Site\maintenance\obj\Debug\MikroMnt.csprojResolveAssemblyReference.cache
+C:\Projects\HFI\Site\maintenance\obj\Debug\MikroMnt.dll
+C:\Projects\HFI\Site\maintenance\obj\Debug\MikroMnt.pdb
+C:\Projects\BSM\Site\maintenance\bin\MikroMnt.dll.config
+C:\Projects\BSM\Site\maintenance\bin\MikroMnt.dll
+C:\Projects\BSM\Site\maintenance\bin\MikroMnt.pdb
+C:\Projects\BSM\Site\maintenance\bin\My.Framework.pdb
+C:\Projects\BSM\Site\maintenance\obj\Debug\MikroMnt.csprojResolveAssemblyReference.cache
+C:\Projects\BSM\Site\maintenance\obj\Debug\MikroMnt.dll
+C:\Projects\BSM\Site\maintenance\obj\Debug\MikroMnt.pdb
