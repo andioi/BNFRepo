@@ -20,8 +20,7 @@ namespace DebtChecking
         #endregion
 
         protected void Page_Load(object sender, EventArgs e)
-        {
-
+        {            
         }
 
         private bool AddSession(string uid, string connstr, int timeout)
