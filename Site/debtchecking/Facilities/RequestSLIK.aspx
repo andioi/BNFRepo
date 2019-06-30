@@ -13,17 +13,17 @@
     <!-- CSS -->
     <link href="../include/style.css" type="text/css" rel="Stylesheet" />
     <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../include/bootstrap-datetimepicker.css" type="text/css" rel="Stylesheet" />
-    <link href="../include/bootstrap-combobox.css" type="text/css" rel="Stylesheet" />
+    <!--<link href="../include/bootstrap-datetimepicker.css" type="text/css" rel="Stylesheet" />
+    <link href="../include/bootstrap-combobox.css" type="text/css" rel="Stylesheet" />-->
     <!-- #include file="~/include/onepost.html" -->
 
     <!-- Script -->
 	<script src="jquery.min.js" type="text/javascript"></script>
-    <script src="../include/bootstrap.min.js" type="text/javascript"></script>
-    <script src="../include/moment-with-locales.js" type="text/javascript"></script>
+    <!--<script src="../include/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../include/moment-with-locales.js" type="text/javascript"></script>-->
 	<script src="jquery.maskedinput.js" type="text/javascript"></script>
-    <script src="../include/bootstrap-datetimepicker.js" type="text/javascript"></script>
-    <script src="../include/bootstrap-combobox.js" type="text/javascript"></script>
+    <!--<script src="../include/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <script src="../include/bootstrap-combobox.js" type="text/javascript"></script>-->
     <script type="text/javascript">
         function ubahjenis(val) {
             if (val == "IND") {
@@ -98,10 +98,11 @@
             var e = document.getElementById("PopupSID_PanelSID_status_app");
             var status_app = e.options[e.selectedIndex].value;
             var nama_supp = document.getElementById("PopupSID_PanelSID_supp_cust_name").value;
-            var tgl = document.getElementById("PopupSID_PanelSID_supp_dob_DD").value;
+            //var tgl = document.getElementById("PopupSID_PanelSID_supp_dob_DD").value;
             var obj = document.getElementById("PopupSID_PanelSID_supp_dob_MM");
-            var bln = obj.options[obj.selectedIndex].value;
-            var thn = document.getElementById("PopupSID_PanelSID_supp_dob_YY").value;
+            //var bln = obj.options[obj.selectedIndex].value;
+            //var thn = document.getElementById("PopupSID_PanelSID_supp_dob_YY").value;
+            var dob = document.getElementById("PopupSID_PanelSID_supp_dob_I").value;
 
             if (document.getElementById("PopupSID_PanelSID_supp_cust_type_0").checked == false &&
                 document.getElementById("PopupSID_PanelSID_supp_cust_type_1").checked == false)
@@ -118,7 +119,11 @@
                 alert("Nama harus diisi!");
                 ret = false;
             }
-            else if (tgl == "" || bln=="" || thn=="") {
+            /*else if (tgl == "" || bln=="" || thn=="") {
+                alert("Tgl lahir/pendirian harus diisi!");
+                ret = false;
+            }*/
+            else if (dob == "") {
                 alert("Tgl lahir/pendirian harus diisi!");
                 ret = false;
             }
@@ -236,12 +241,7 @@
                         <tr>
                             <td class="B01">Tgl Lahir / Pendirian</td>
                             <td class="BS"></td>
-                            <td class="B11">
-                                <div class="input-group date" style="width:200px">
-                                    <asp:TextBox ID="dob" runat="server" CssClass="form-control input-sm mandatory"></asp:TextBox>
-                                    <span class="input-group-addon input-sm"><span class="glyphicon glyphicon-calendar"></span></span>
-                                </div>
-                            </td>
+                            <td class="B11"><dxp:ASPxDateEdit ID="dob" runat="server" CssClass="mandatory" DisplayFormatString="dd/MM/yyyy" EditFormatString="dd/MM/yyyy"></dxp:ASPxDateEdit></td>
                         </tr>
                         <tr>
                             <td class="B01">Nomor KTP / Paspor / Akta</td>
@@ -435,7 +435,7 @@
                             <tr>
                                 <td class="B01">Tgl Lahir/Pendirian</td>
                                 <td class="BS"></td>
-                                <td class="B11"><cc1:CC_Date ID="supp_dob" runat="server" ImgShown="false" CssClass="mandatory"></cc1:CC_Date></td>
+                                <td class="B11"><dxp:ASPxDateEdit ID="supp_dob" runat="server" CssClass="mandatory" DisplayFormatString="dd/MM/yyyy" EditFormatString="dd/MM/yyyy"></dxp:ASPxDateEdit></td>
                             </tr>
                             <tr>
                                 <td class="B01">Nomor KTP/Paspor/Akta</td>
@@ -604,14 +604,16 @@
 	<script>
 	jQuery(function($){
         $("#mainPanel_npwp").mask("99.999.999.9-999.999");
-
+        $("#mainPanel_dob").mask("31/12/9999");
+        $("#PopupSID_PanelSID_supp_dob_I").mask("31/12/9999");
+        /*
         $('#mainPanel_dob').datetimepicker({
             //language: 'fr',
             ignoreReadonly: true,
             format: 'DD/MM/YYYY',
             showTodayButton: true,
             //pickTime: false
-        });
+        });*/
     });
 
 	</script>

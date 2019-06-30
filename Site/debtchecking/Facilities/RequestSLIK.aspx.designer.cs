@@ -136,7 +136,7 @@ namespace DebtChecking.Facilities {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dob;
+        protected global::DevExpress.Web.ASPxDateEdit dob;
         
         /// <summary>
         /// ktp control.
@@ -283,6 +283,15 @@ namespace DebtChecking.Facilities {
         protected global::DevExpress.Web.ASPxGridView GridViewSuppl;
         
         /// <summary>
+        /// button2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputButton button2;
+        
+        /// <summary>
         /// tr_submit control.
         /// </summary>
         /// <remarks>
@@ -406,7 +415,7 @@ namespace DebtChecking.Facilities {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DMSControls.CC_Date supp_dob;
+        protected global::DevExpress.Web.ASPxDateEdit supp_dob;
         
         /// <summary>
         /// supp_ktp control.

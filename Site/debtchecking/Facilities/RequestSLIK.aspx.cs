@@ -431,7 +431,7 @@ namespace DebtChecking.Facilities
                     pob.Text = dt.Rows[0]["pob"].ToString();
                     homeaddress.Text = dt.Rows[0]["homeaddress"].ToString();
                     phonenumber.Text = dt.Rows[0]["phonenumber"].ToString();
-                    dob.Text = dt.Rows[0]["dob"].ToString();
+                    dob.Value = dt.Rows[0]["dob"];
                     try
                     {
                         gender.SelectedValue = dt.Rows[0]["gender"].ToString();
@@ -499,7 +499,7 @@ namespace DebtChecking.Facilities
                 supp_pob.Text = dt.Rows[0]["pob"].ToString();
                 supp_homeaddress.Text = dt.Rows[0]["homeaddress"].ToString();
                 supp_phonenumber.Text = dt.Rows[0]["phonenumber"].ToString();
-                supp_dob.Value = dt.Rows[0]["dob"].ToString();
+                supp_dob.Value = dt.Rows[0]["dob"];
                 try
                 {
                     supp_gender.SelectedValue = dt.Rows[0]["gender"].ToString();
