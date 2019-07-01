@@ -613,4 +613,3 @@ C:\WORKS\BNF\BNFRepo\Site\debtchecking\bin\Newtonsoft.Json.dll
 C:\WORKS\BNF\BNFRepo\Site\debtchecking\bin\EPPlus.xml
 C:\WORKS\BNF\BNFRepo\Site\debtchecking\bin\Newtonsoft.Json.xml
 C:\WORKS\BNF\BNFRepo\Site\debtchecking\obj\Debug\DebtChecking.csproj.CopyComplete
-C:\WORKS\BNF\BNFRepo\Site\debtchecking\obj\Debug\DebtChecking.csprojAssemblyReference.cache

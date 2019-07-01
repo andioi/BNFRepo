@@ -307,7 +307,14 @@ namespace DebtChecking.Facilities
             else if (e.Parameter == "d:")
             {
                 try
-                { 
+                {
+                    string userName = "";
+                    conn.ExecReader("select SU_FULLNAME from scalluser where USERID = @1", new object[] { USERID }, dbtimeout);
+                    if (conn.hasRow())
+                    {
+                        userName = conn.GetFieldValue(0).ToString();
+                    }
+
                     string sql = "select p.reffnumber, p.cust_name, n.nik, a.ideb_content_ina, a.ideb_pdf, r.resultid " +
                             "from trn_ideb_detail_attrs a " +
                             "join trn_ideb_details d on d.trn_ideb_detail_id = a.trn_ideb_detail_id "+
@@ -336,7 +343,15 @@ namespace DebtChecking.Facilities
                         string pdffilename = reffnumber + "_" + cust_name + "_" + dt.Rows[i]["nik"].ToString() + ".pdf";
                         pdffilename = PhysicalPath + "\\" + pdffilename;
                         byte[] pdfbyte = (byte[])dt.Rows[i]["ideb_pdf"];
+                        //File.WriteAllBytes(pdffilename, pdfbyte);
+
+                        System.IO.File.WriteAllBytes(Server.MapPath("../temp/") + reffnumber + "_" + i.ToString() + ".pdf", pdfbyte);
+                        new SLIK.Watermark().AddWatermark("Downloaded by: " + userName, Server.MapPath("../temp/") + reffnumber + "_" + i.ToString() + ".pdf",
+                            Server.MapPath("../temp/") + reffnumber + "_" + i.ToString() + "_result.pdf");
+                        pdfbyte = System.IO.File.ReadAllBytes(Server.MapPath("../temp/") + reffnumber + "_" + i.ToString() + "_result.pdf");
                         File.WriteAllBytes(pdffilename, pdfbyte);
+                        File.Delete(Server.MapPath("../temp/") + reffnumber + "_" + i.ToString() + ".pdf");
+                        File.Delete(Server.MapPath("../temp/") + reffnumber + "_" + i.ToString() + "_result.pdf");
 
                         string txtfilename = reffnumber + "_" + cust_name + "_" + dt.Rows[i]["nik"].ToString() + ".txt";
                         txtfilename = PhysicalPath + "\\" + txtfilename;
