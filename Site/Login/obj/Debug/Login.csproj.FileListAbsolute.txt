@@ -1,0 +1,9 @@
+C:\WORKS\BNF\BNFRepo\Site\Login\bin\MikroLogin.dll.config
+C:\WORKS\BNF\BNFRepo\Site\Login\bin\MikroLogin.dll
+C:\WORKS\BNF\BNFRepo\Site\Login\bin\MikroLogin.pdb
+C:\WORKS\BNF\BNFRepo\Site\Login\bin\DMS.Tools.dll
+C:\WORKS\BNF\BNFRepo\Site\Login\obj\Debug\Login.csprojAssemblyReference.cache
+C:\WORKS\BNF\BNFRepo\Site\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\WORKS\BNF\BNFRepo\Site\Login\obj\Debug\Login.csproj.CopyComplete
+C:\WORKS\BNF\BNFRepo\Site\Login\obj\Debug\MikroLogin.dll
+C:\WORKS\BNF\BNFRepo\Site\Login\obj\Debug\MikroLogin.pdb

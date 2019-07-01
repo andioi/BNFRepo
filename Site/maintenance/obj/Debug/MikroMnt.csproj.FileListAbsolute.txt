@@ -174,3 +174,12 @@ C:\Projects\BSM\Site\maintenance\bin\My.Framework.pdb
 C:\Projects\BSM\Site\maintenance\obj\Debug\MikroMnt.csprojResolveAssemblyReference.cache
 C:\Projects\BSM\Site\maintenance\obj\Debug\MikroMnt.dll
 C:\Projects\BSM\Site\maintenance\obj\Debug\MikroMnt.pdb
+C:\WORKS\BNF\BNFRepo\Site\maintenance\bin\MikroMnt.dll.config
+C:\WORKS\BNF\BNFRepo\Site\maintenance\bin\MikroMnt.dll
+C:\WORKS\BNF\BNFRepo\Site\maintenance\bin\MikroMnt.pdb
+C:\WORKS\BNF\BNFRepo\Site\maintenance\bin\My.Framework.pdb
+C:\WORKS\BNF\BNFRepo\Site\maintenance\obj\Debug\MikroMnt.csprojAssemblyReference.cache
+C:\WORKS\BNF\BNFRepo\Site\maintenance\obj\Debug\MikroMnt.csproj.CoreCompileInputs.cache
+C:\WORKS\BNF\BNFRepo\Site\maintenance\obj\Debug\MikroMnt.csproj.CopyComplete
+C:\WORKS\BNF\BNFRepo\Site\maintenance\obj\Debug\MikroMnt.dll
+C:\WORKS\BNF\BNFRepo\Site\maintenance\obj\Debug\MikroMnt.pdb
