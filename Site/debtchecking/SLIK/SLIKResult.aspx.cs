@@ -95,6 +95,15 @@ namespace DebtChecking.Facilities
                 ddl_appid.SelectedValue = Request.QueryString["regno"];
                 //ListItem ddlItem = new ListItem("- All -","all");
                 //ddl_appid.Items.Add(ddlItem);
+
+				//insert into log_view_result
+                string ipAdd = Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
+                if (string.IsNullOrEmpty(ipAdd))
+                {
+                    ipAdd = Request.ServerVariables["REMOTE_ADDR"];
+                }
+                object[] par = new object[] { USERID, ipAdd, Request.QueryString["regno"] };
+                conn.ExecNonQuery("exec log_view_result_insert @1,@2,@3", par, dbtimeout);
             }
         }
 
