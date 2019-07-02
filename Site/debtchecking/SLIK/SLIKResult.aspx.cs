@@ -387,6 +387,10 @@ namespace DebtChecking.Facilities
 
                         mainPanel.JSProperties["cp_export"] = DownloadPath + reffnumber + "_" + cust_name + ".zip";
                         mainPanel.JSProperties["cp_filename"] = reffnumber + "_" + cust_name + ".zip";
+
+						string SP = "exec USP_EMAIL_PDF_DOWNLOAD @1,@2";
+                        object[] prmtr = new object[] { appid.Value, USERID };
+                        conn.ExecuteNonQuery(SP, prmtr, dbtimeout);
                     }
                     else
                     {
