@@ -103,7 +103,9 @@
 						<tr>
 			                <td class="B01">KTP / NIK</td>
 			                <td class="BS">:</td>
-			                <td class="B11"><asp:Label ID="ktp" runat="server"></asp:Label></td>
+			                <td class="B11"><asp:Label ID="ktp" runat="server"></asp:Label> &nbsp; &nbsp;
+                                <input name="dukcapil" type="button" id="dukcapil" class="btn btn-xs btn-warning" onclick="PopupPage('Dukcapil.aspx?ktp='+$('#mainPanel_ktp').text(),640,400)" value="Lihat Data Dukcapil">
+							</td>
 			            </tr>
 						<tr>
 			                <td class="B01">KTP Address</td>
